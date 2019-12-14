@@ -183,7 +183,7 @@ KRW
 
 <script language="JavaScript">
   $.getJSON("https://min-api.cryptocompare.com/data/price?fsym=DOGE&tsyms=KRW", function(data){
-            $("#DOGEPrice").text(data["KRW"].toFixed(4));
+            $("#DOGEPrice").text(data["KRW"].toFixed(6));
         }).fail(function( dat, textStatus, error ) {
                     var err = textStatus + ", " + error;
                     alert(err);

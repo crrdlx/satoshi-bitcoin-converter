@@ -183,7 +183,7 @@ AUD |
 
 <script language="JavaScript">
   $.getJSON("https://min-api.cryptocompare.com/data/price?fsym=DOGE&tsyms=AUD", function(data){
-            $("#DOGEPrice").text(data["AUD"].toFixed(4));
+            $("#DOGEPrice").text(data["AUD"].toFixed(6));
         }).fail(function( dat, textStatus, error ) {
                     var err = textStatus + ", " + error;
                     alert(err);

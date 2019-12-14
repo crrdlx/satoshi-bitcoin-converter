@@ -182,7 +182,7 @@ CAD |
 
 <script language="JavaScript">
   $.getJSON("https://min-api.cryptocompare.com/data/price?fsym=DOGE&tsyms=CAD", function(data){
-            $("#DOGEPrice").text(data["CAD"].toFixed(4));
+            $("#DOGEPrice").text(data["CAD"].toFixed(6));
         }).fail(function( dat, textStatus, error ) {
                     var err = textStatus + ", " + error;
                     alert(err);
