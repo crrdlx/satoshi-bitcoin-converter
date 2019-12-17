@@ -1,4 +1,6 @@
-﻿1. download the apk file
+### Anyone having trouble since the 5.0 update, use the 4.7.1 file...
+
+1. download the apk file
 2. allow or give it permission
 3. install it
 
