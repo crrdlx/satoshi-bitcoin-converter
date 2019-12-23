@@ -78,7 +78,501 @@ Dear users:
 My thoughts were that this would be my tiny contribution to Bitcoin and crypto. I hope that you find this app useful.</p>
 As a side note, I've long pushed for the shi symbol &#x30B7 to represent one satoshi, get it? satoSHI? <a href="https://www.reddit.com/r/Bitcoin/comments/3egrjk/satoshi_symbol" target="_blank">Reddit post here</a>. On January 17, 2019, the <a href="https://grin.mw/" target=_blank">Grin coin</a> developers held a governance meeting and adopted the &#12484; symbol (Tsu) as the official symbol of Grin: <a href="https://github.com/mimblewimble/grin-pm/blob/master/notes/20190117-meeting-governance.md#102-currency-symbol" target="_blank">Read meeting notes, section 10.2</a>. The &#12484; symbol (tsu) is only slightly different than the &#x30B7 symbol (shi). Anyway, this is great! <a href="grin/dev_notes.html">Read Grin notes from the developer here</a>.
 <p></p>
-Please realize that I do this during my limited spare time. Take it for what it is...a free app, with no advertisements. I do this just for the satisfaction of making something that works, for the crypto community, and with the hope that it might help someone in some small way. I'm thrilled that this app has logged users in 101 countries around the world, many of which are developing nations, and I'm sure there are more countries that I've missed. I trust that the app indeed is doing some good in these places. That makes me :)
+Please realize that I do this during my limited spare time. Take it for what it is...a free app, with no advertisements. I do this just for the satisfaction of making something that works, for the crypto community, and with the hope that it might help someone in some small way. I'm thrilled that this app has logged users in 102 countries around the world, and I'm sure there are more countries that I've missed. The map below shows the countries using the Satoshi Bitcoin Converter app in glorious bitcoin orange.
+
+
+
+
+<script src="https://www.amcharts.com/lib/3/ammap.js" type="text/javascript"></script>
+<script src="https://www.amcharts.com/lib/3/maps/js/worldHigh.js" type="text/javascript"></script>
+<script src="https://www.amcharts.com/lib/3/themes/dark.js" type="text/javascript"></script>
+<div id="mapdiv" style="width: 1000px; height: 450px;"></div>
+<script type="text/javascript">
+var map = AmCharts.makeChart("mapdiv",{
+type: "map",
+theme: "dark",
+projection: "winkel3",
+panEventsEnabled : true,
+backgroundColor : "#FFFFFF",
+backgroundAlpha : 1,
+zoomControl: {
+zoomControlEnabled : true
+},
+dataProvider : {
+map : "worldHigh",
+getAreasFromMap : true,
+areas :
+[
+	{
+		"id": "AL",
+		"showAsSelected": true
+	},
+	{
+		"id": "AD",
+		"showAsSelected": true
+	},
+	{
+		"id": "AT",
+		"showAsSelected": true
+	},
+	{
+		"id": "AZ",
+		"showAsSelected": true
+	},
+	{
+		"id": "BE",
+		"showAsSelected": true
+	},
+	{
+		"id": "BA",
+		"showAsSelected": true
+	},
+	{
+		"id": "BG",
+		"showAsSelected": true
+	},
+	{
+		"id": "HR",
+		"showAsSelected": true
+	},
+	{
+		"id": "CZ",
+		"showAsSelected": true
+	},
+	{
+		"id": "EE",
+		"showAsSelected": true
+	},
+	{
+		"id": "FI",
+		"showAsSelected": true
+	},
+	{
+		"id": "FR",
+		"showAsSelected": true
+	},
+	{
+		"id": "DE",
+		"showAsSelected": true
+	},
+	{
+		"id": "GR",
+		"showAsSelected": true
+	},
+	{
+		"id": "GG",
+		"showAsSelected": true
+	},
+	{
+		"id": "IE",
+		"showAsSelected": true
+	},
+	{
+		"id": "IT",
+		"showAsSelected": true
+	},
+	{
+		"id": "LV",
+		"showAsSelected": true
+	},
+	{
+		"id": "LT",
+		"showAsSelected": true
+	},
+	{
+		"id": "MK",
+		"showAsSelected": true
+	},
+	{
+		"id": "MD",
+		"showAsSelected": true
+	},
+	{
+		"id": "NL",
+		"showAsSelected": true
+	},
+	{
+		"id": "NO",
+		"showAsSelected": true
+	},
+	{
+		"id": "PL",
+		"showAsSelected": true
+	},
+	{
+		"id": "PT",
+		"showAsSelected": true
+	},
+	{
+		"id": "RO",
+		"showAsSelected": true
+	},
+	{
+		"id": "RU",
+		"showAsSelected": true
+	},
+	{
+		"id": "RS",
+		"showAsSelected": true
+	},
+	{
+		"id": "SK",
+		"showAsSelected": true
+	},
+	{
+		"id": "SI",
+		"showAsSelected": true
+	},
+	{
+		"id": "ES",
+		"showAsSelected": true
+	},
+	{
+		"id": "SE",
+		"showAsSelected": true
+	},
+	{
+		"id": "CH",
+		"showAsSelected": true
+	},
+	{
+		"id": "TR",
+		"showAsSelected": true
+	},
+	{
+		"id": "UA",
+		"showAsSelected": true
+	},
+	{
+		"id": "GB",
+		"showAsSelected": true
+	},
+	{
+		"id": "CA",
+		"showAsSelected": true
+	},
+	{
+		"id": "CR",
+		"showAsSelected": true
+	},
+	{
+		"id": "CU",
+		"showAsSelected": true
+	},
+	{
+		"id": "DO",
+		"showAsSelected": true
+	},
+	{
+		"id": "HT",
+		"showAsSelected": true
+	},
+	{
+		"id": "HN",
+		"showAsSelected": true
+	},
+	{
+		"id": "MX",
+		"showAsSelected": true
+	},
+	{
+		"id": "PA",
+		"showAsSelected": true
+	},
+	{
+		"id": "PR",
+		"showAsSelected": true
+	},
+	{
+		"id": "TT",
+		"showAsSelected": true
+	},
+	{
+		"id": "US",
+		"showAsSelected": true
+	},
+	{
+		"id": "AR",
+		"showAsSelected": true
+	},
+	{
+		"id": "BO",
+		"showAsSelected": true
+	},
+	{
+		"id": "BR",
+		"showAsSelected": true
+	},
+	{
+		"id": "CL",
+		"showAsSelected": true
+	},
+	{
+		"id": "CO",
+		"showAsSelected": true
+	},
+	{
+		"id": "PY",
+		"showAsSelected": true
+	},
+	{
+		"id": "PE",
+		"showAsSelected": true
+	},
+	{
+		"id": "UY",
+		"showAsSelected": true
+	},
+	{
+		"id": "VE",
+		"showAsSelected": true
+	},
+	{
+		"id": "DZ",
+		"showAsSelected": true
+	},
+	{
+		"id": "AO",
+		"showAsSelected": true
+	},
+	{
+		"id": "BJ",
+		"showAsSelected": true
+	},
+	{
+		"id": "BW",
+		"showAsSelected": true
+	},
+	{
+		"id": "BF",
+		"showAsSelected": true
+	},
+	{
+		"id": "CM",
+		"showAsSelected": true
+	},
+	{
+		"id": "CV",
+		"showAsSelected": true
+	},
+	{
+		"id": "KM",
+		"showAsSelected": true
+	},
+	{
+		"id": "CI",
+		"showAsSelected": true
+	},
+	{
+		"id": "EG",
+		"showAsSelected": true
+	},
+	{
+		"id": "GQ",
+		"showAsSelected": true
+	},
+	{
+		"id": "ER",
+		"showAsSelected": true
+	},
+	{
+		"id": "GA",
+		"showAsSelected": true
+	},
+	{
+		"id": "GH",
+		"showAsSelected": true
+	},
+	{
+		"id": "GN",
+		"showAsSelected": true
+	},
+	{
+		"id": "GW",
+		"showAsSelected": true
+	},
+	{
+		"id": "KE",
+		"showAsSelected": true
+	},
+	{
+		"id": "LS",
+		"showAsSelected": true
+	},
+	{
+		"id": "MU",
+		"showAsSelected": true
+	},
+	{
+		"id": "MA",
+		"showAsSelected": true
+	},
+	{
+		"id": "NG",
+		"showAsSelected": true
+	},
+	{
+		"id": "RW",
+		"showAsSelected": true
+	},
+	{
+		"id": "ZA",
+		"showAsSelected": true
+	},
+	{
+		"id": "TZ",
+		"showAsSelected": true
+	},
+	{
+		"id": "TG",
+		"showAsSelected": true
+	},
+	{
+		"id": "TN",
+		"showAsSelected": true
+	},
+	{
+		"id": "UG",
+		"showAsSelected": true
+	},
+	{
+		"id": "BH",
+		"showAsSelected": true
+	},
+	{
+		"id": "BD",
+		"showAsSelected": true
+	},
+	{
+		"id": "CN",
+		"showAsSelected": true
+	},
+	{
+		"id": "HK",
+		"showAsSelected": true
+	},
+	{
+		"id": "IN",
+		"showAsSelected": true
+	},
+	{
+		"id": "ID",
+		"showAsSelected": true
+	},
+	{
+		"id": "IR",
+		"showAsSelected": true
+	},
+	{
+		"id": "IL",
+		"showAsSelected": true
+	},
+	{
+		"id": "JP",
+		"showAsSelected": true
+	},
+	{
+		"id": "KZ",
+		"showAsSelected": true
+	},
+	{
+		"id": "KW",
+		"showAsSelected": true
+	},
+	{
+		"id": "LA",
+		"showAsSelected": true
+	},
+	{
+		"id": "MY",
+		"showAsSelected": true
+	},
+	{
+		"id": "MM",
+		"showAsSelected": true
+	},
+	{
+		"id": "NP",
+		"showAsSelected": true
+	},
+	{
+		"id": "PK",
+		"showAsSelected": true
+	},
+	{
+		"id": "PH",
+		"showAsSelected": true
+	},
+	{
+		"id": "QA",
+		"showAsSelected": true
+	},
+	{
+		"id": "SA",
+		"showAsSelected": true
+	},
+	{
+		"id": "SG",
+		"showAsSelected": true
+	},
+	{
+		"id": "KR",
+		"showAsSelected": true
+	},
+	{
+		"id": "LK",
+		"showAsSelected": true
+	},
+	{
+		"id": "TW",
+		"showAsSelected": true
+	},
+	{
+		"id": "TJ",
+		"showAsSelected": true
+	},
+	{
+		"id": "TH",
+		"showAsSelected": true
+	},
+	{
+		"id": "TM",
+		"showAsSelected": true
+	},
+	{
+		"id": "AE",
+		"showAsSelected": true
+	},
+	{
+		"id": "VN",
+		"showAsSelected": true
+	},
+	{
+		"id": "AU",
+		"showAsSelected": true
+	},
+	{
+		"id": "NZ",
+		"showAsSelected": true
+	}
+]
+},
+areasSettings : {
+autoZoom : true,
+color : "#B4B4B7",
+colorSolid : "#F2A900",
+selectedColor : "#F2A900",
+outlineColor : "#666666",
+rollOverColor : "#9EC2F7",
+rollOverOutlineColor : "#000000"
+}
+});
+</script>
+
+
+
+<p></p>
+Since many of the nations are developing or are undergoing turmoil in some manner, I trust that the app indeed is doing some good in some way in these places. That makes me :)
 <p></p>
 Before offering a less-than-favorable rating or complaining about something in the app, drop me a note and I'll take a look.
 <p></p>
