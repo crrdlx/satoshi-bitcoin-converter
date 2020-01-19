@@ -1,72 +1,115 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="utf-8">
-    <title>SatoshiTalk</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <style>
-    body {
-      background: #f6f6f6;
-      max-width: 750px;
-      margin: 40px auto;
-      padding: 0 22px;
-      font: 18px/1.5 -apple-system, BlinkMacSystemFont, /* MacOS and iOS */
-                   'avenir next', avenir, /* MacOS and iOS */
-                   'Segoe UI', /* Windows */
-                   'lucida grande', /* Older MacOS */
-                   'helvetica neue', helvetica, /* Older MacOS */
-                   'Fira Sans', /* Firefox OS */
-                   roboto, noto, /* Google stuff */
-                   'Droid Sans', /* Old Google stuff */
-                   cantarell, oxygen, ubuntu, /* Linux stuff */
-                   'franklin gothic medium', 'century gothic', /* Windows stuff */
-                   'Liberation Sans', /* Linux */
-                   sans-serif; /* Everything else */;
-      color: #222;
-    }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #333333;
-  font-weight: bold;
-  line-height: 1.2;
-  margin-bottom: 1em;
-  margin-top: 2em;
-}
-h1 {
-  font-size: 2.2em;
-  text-align: center;
-}
-h2 {
-  font-size: 1.8em;
-  border-bottom: solid 0.1rem firebrick;
-}
-h3 {
-  font-size: 1.5em;
-}
-h4 {
-  font-size: 1.3em;
-  text-decoration: underline;
-}
-h5 {
-  font-size: 1.2em;
-  font-style: italic;
-}
-h6 {
-  font-size: 1.1em;
-  margin-bottom: 0.5rem;
-  color: #555555;
-}
-    img.centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto }
-}
-    }</style>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  
+  <meta content="text/html" http-equiv="content-type">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <title>SatoshiTalk</title>
+  <style type="text/css">
+    DIV.ETHannouncement {text-align: center }
+    </style>
+  
+  <link rel="icon" 
+        type="image/ico" 
+        href="http://br549.mywebcommunity.org/favicon.ico">
+        
+    <STYLE>
+  html {
+    font-size: medium;
+  }
+  body {
+    background-color: #f6f6f6;
+    color: #330;
+    font-family: verdana, georgia, times, serif;
+    margin: ;
+    max-width: 80em;
+    padding: 0 1em;
+    width: auto;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  a {
+    color: #1e6b8c;
+    font-size: 1em;
+    text-decoration: none;
+    transition-delay: 0.1s;
+    transition-duration: 0.3s;
+    transition-property: color, background-color;
+    transition-timing-function: linear;
+  }
+  a:visited {
+    color: #6f32ad;
+    font-size: 1em;
+  }
+  a:hover {
+    background: #b6cff9;
+    font-size: 1em;
+    text-decoration: underline;
+  }
+  a:active {
+    background-color: #427fed;
+    color: #fffff6;
+    color: white;
+    font-size: 1em;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #black;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 1em;
+    margin-top: 2em;
+  }
+  h1 {
+    font-size: 2.2em;
+    text-align: center;
+  }
+  h2 {
+    font-size: 1.8em;
+    border-bottom: solid 0.1rem #703820;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+  h4 {
+    font-size: 1.3em;
+    text-decoration: underline;
+  }
+  h5 {
+    font-size: 1.2em;
+    font-style: italic;
+  }
+  h6 {
+    font-size: 1.1em;
+    margin-bottom: 0.5rem;
+  }
+  pre,
+  code,
+  xmp {
+    font-family: courier;
+    font-size: 1rem;
+    line-height: 1.4;
+    white-space: pre-wrap;
+  }
+  input[type=number]{
+      width: 135px;
+  } 
+  </STYLE>
+    
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  
+  <link href="http://www.br549.mywebcommunity.org/apple-touch-icon.png" rel="apple-touch-icon" />
+  <link href="http://www.br549.mywebcommunity.org/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
+  <link href="http://www.br549.mywebcommunity.org/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
+  <link href="http://www.br549.mywebcommunity.org/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
+  <link href="http://www.br549.mywebcommunity.org/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180" />
+  <link href="http://www.br549.mywebcommunity.org/icon-hires.png" rel="icon" sizes="192x192" />
+  <link href="http://www.br549.mywebcommunity.org/icon-normal.png" rel="icon" sizes="128x128" />
+  
   </head>
 <body>
 <a name="home_title"></a>
