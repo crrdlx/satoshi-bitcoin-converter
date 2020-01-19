@@ -1,131 +1,110 @@
 <html><head>
-<!-- Begin Firebase code for Google Analytics -->
-<script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyB4cpWgy3gOHXR6NGt9dcDGMIyrA7gkQvo",
-    authDomain: "satoshi-bitcoin-converter-2.firebaseapp.com",
-    databaseURL: "https://satoshi-bitcoin-converter-2.firebaseio.com",
-    projectId: "satoshi-bitcoin-converter-2",
-    storageBucket: "",
-    messagingSenderId: "267745284171"
-  };
-  firebase.initializeApp(config);
-</script>
-<!-- End Firebase code for Google Analytics -->
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-
-<meta content="text/html" http-equiv="content-type">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<title>Satoshi Bitcoin Converter</title>
-<style type="text/css">
-  DIV.ETHannouncement {text-align: center }
-  </style>
-
-<link rel="icon" 
-      type="image/ico" 
-      href="http://br549.mywebcommunity.org/favicon.ico">
-      
-  <STYLE>
-html {
-  font-size: medium;
-}
-body {
-  background-color: #f6f6f6;
-  color: #330;
-  font-family: verdana, georgia, times, serif;
-  margin: ;
-  max-width: 80em;
-  padding: 0 1em;
-  width: auto;
-  font-size: 1rem;
-  line-height: 1.4;
-}
-a {
-  color: #1e6b8c;
-  font-size: 1em;
-  text-decoration: none;
-  transition-delay: 0.1s;
-  transition-duration: 0.3s;
-  transition-property: color, background-color;
-  transition-timing-function: linear;
-}
-a:visited {
-  color: #6f32ad;
-  font-size: 1em;
-}
-a:hover {
-  background: #b6cff9;
-  font-size: 1em;
-  text-decoration: underline;
-}
-a:active {
-  background-color: #427fed;
-  color: #fffff6;
-  color: white;
-  font-size: 1em;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #black;
-  font-weight: bold;
-  line-height: 1.2;
-  margin-bottom: 1em;
-  margin-top: 2em;
-}
-h1 {
-  font-size: 2.2em;
-  text-align: center;
-}
-h2 {
-  font-size: 1.8em;
-  border-bottom: solid 0.1rem #703820;
-}
-h3 {
-  font-size: 1.5em;
-}
-h4 {
-  font-size: 1.3em;
-  text-decoration: underline;
-}
-h5 {
-  font-size: 1.2em;
-  font-style: italic;
-}
-h6 {
-  font-size: 1.1em;
-  margin-bottom: 0.5rem;
-}
-pre,
-code,
-xmp {
-  font-family: courier;
-  font-size: 1rem;
-  line-height: 1.4;
-  white-space: pre-wrap;
-}
-input[type=number]{
-    width: 135px;
-} 
-</STYLE>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <meta content="text/html" http-equiv="content-type">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <title>Satoshi Bitcoin Converter</title>
+  <style type="text/css">
+    DIV.ETHannouncement {text-align: center }
+    </style>
   
- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-
-<link href="http://www.br549.mywebcommunity.org/apple-touch-icon.png" rel="apple-touch-icon" />
-<link href="http://www.br549.mywebcommunity.org/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
-<link href="http://www.br549.mywebcommunity.org/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
-<link href="http://www.br549.mywebcommunity.org/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
-<link href="http://www.br549.mywebcommunity.org/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180" />
-<link href="http://www.br549.mywebcommunity.org/icon-hires.png" rel="icon" sizes="192x192" />
-<link href="http://www.br549.mywebcommunity.org/icon-normal.png" rel="icon" sizes="128x128" />
-
-</head><body>
+  <link rel="icon" 
+        type="image/ico" 
+        href="http://br549.mywebcommunity.org/favicon.ico">
+        
+    <STYLE>
+  html {
+    font-size: medium;
+  }
+  body {
+    background-color: #f6f6f6;
+    color: #330;
+    font-family: verdana, georgia, times, serif;
+    margin: ;
+    max-width: 80em;
+    padding: 0 1em;
+    width: auto;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  a {
+    color: #1e6b8c;
+    font-size: 1em;
+    text-decoration: none;
+    transition-delay: 0.1s;
+    transition-duration: 0.3s;
+    transition-property: color, background-color;
+    transition-timing-function: linear;
+  }
+  a:visited {
+    color: #6f32ad;
+    font-size: 1em;
+  }
+  a:hover {
+    background: #b6cff9;
+    font-size: 1em;
+    text-decoration: underline;
+  }
+  a:active {
+    background-color: #427fed;
+    color: #fffff6;
+    color: white;
+    font-size: 1em;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #black;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 1em;
+    margin-top: 2em;
+  }
+  h1 {
+    font-size: 2.2em;
+    text-align: center;
+  }
+  h2 {
+    font-size: 1.8em;
+    border-bottom: solid 0.1rem #703820;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+  h4 {
+    font-size: 1.3em;
+    text-decoration: underline;
+  }
+  h5 {
+    font-size: 1.2em;
+    font-style: italic;
+  }
+  h6 {
+    font-size: 1.1em;
+    margin-bottom: 0.5rem;
+  }
+  pre,
+  code,
+  xmp {
+    font-family: courier;
+    font-size: 1rem;
+    line-height: 1.4;
+    white-space: pre-wrap;
+  }
+  </STYLE>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript">var switchTo5x=true;</script>
+  <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+  <script type="text/javascript">stLight.options({publisher: "7d6eba2f-9efd-4a32-baf6-a5255dd85886", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+  <STYLE>
+  <!--
+  A{text-decoration:none}
+  -->
+  </STYLE>
+  </head>
+<body>
 <big>
 <br>
 <center>
