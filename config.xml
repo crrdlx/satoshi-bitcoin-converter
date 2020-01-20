@@ -4,7 +4,11 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.satoshi.bitcoin.converter"
+<<<<<<< HEAD
         version   = "5.2.3">
+=======
+        version   = "5.2.1">
+>>>>>>> 06f6d0daae7e3f386235daf6a0b2eea987d9df63
     <name>Satoshi Bitcoin Converter</name>
 
     <description>
