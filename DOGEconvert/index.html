@@ -183,7 +183,7 @@ Approximate value of one DOGE at time of pageload (in USD):</small></small>
 
 <script language="JavaScript">
   $.getJSON("https://min-api.cryptocompare.com/data/price?fsym=DOGE&tsyms=USD", function(data){
-            $("#DOGEPrice").text(data["USD"].toFixed(6));
+            $("#DOGEPrice").text(data["USD"].toFixed(4));
         }).fail(function( dat, textStatus, error ) {
                     var err = textStatus + ", " + error;
                     alert(err);
