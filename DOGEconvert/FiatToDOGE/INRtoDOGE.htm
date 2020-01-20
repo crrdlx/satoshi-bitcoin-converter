@@ -182,7 +182,7 @@ INR |
 
 <script language="JavaScript">
   $.getJSON("https://min-api.cryptocompare.com/data/price?fsym=DOGE&tsyms=INR", function(data){
-            $("#DOGEPrice").text(data["INR"].toFixed(6));
+            $("#DOGEPrice").text(data["INR"].toFixed(4));
         }).fail(function( dat, textStatus, error ) {
                     var err = textStatus + ", " + error;
                     alert(err);
