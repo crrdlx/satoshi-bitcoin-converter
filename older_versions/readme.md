@@ -2,7 +2,7 @@ Some people are getting stuck at "Loading current price..."
 
 If this is you, try version 4.7.1
 
-You can trust that the download is safe by checking that I am who I say I am (the app developer, crrdlx), by double-checking on Keybase at <a href="https://keybase.io/crrdlx" target="_blank">keybase.io/crrdlx</a>
+You can trust that the download is safe by checking that I am who I say I am (the app developer, crrdlx), by double-checking on Keybase at https://keybase.io/crrdlx
 
 ### How to install version 4.7.1
 
