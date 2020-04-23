@@ -1,3 +1,0 @@
-BAT-XLM-XMR-NANO branch
-
-The goal is to add these cryptos.
