@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta content="text/html" http-equiv="content-type">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<title>Litecoin Converter (LTC)</title>
+<title>Basic Attention Token Converter (BAT)</title>
 <style type="text/css">
   DIV.ETHannouncement {text-align: center }
   </style>
@@ -113,7 +113,7 @@ input[type=number]{
 <br>
 <center>
 <div class="w3-container">
-  <a href="../index.html" class="w3-button w3-round-large w3-gray" > Litecoin Converter (LTC)</a>
+  <a href="../index.html" class="w3-button w3-round-large w3-purple" > Basic Attention Token Converter (BAT)</a>
 </div>
 </center>
 <small>Enter a number.<br></small>
@@ -122,62 +122,62 @@ input[type=number]{
 <tbody>
 <tr>
 <td>
-<input type="number" onkeyup="BTCconvert()" value="" name="BTC" size="12"> &#x0141; LTC-<small>litecoin</small></td>
+<input type="number" onkeyup="BTCconvert()" value="" name="BTC" size="12"> BAT</td>
 </tr>
 <tr>
 <td>
-<input type="number" onkeyup="mBTCconvert()" value="" name="mBTC" size="12"> mLTC-<small>millilitecoin</small></td>
+<input type="number" onkeyup="mBTCconvert()" value="" name="mBTC" size="12"> mBAT-<small>milliBAT</small></td>
 </tr>
 <tr>
 <td>
-<input type="number" onkeyup="uBTCconvert()" value="" name="uBTC" size="12"> &#956;LTC-<small>microlitecoin</small></td>
+<input type="number" onkeyup="uBTCconvert()" value="" name="uBTC" size="12"> &#956;BAT-<small>microBAT</small></td>
 </tr>
 <tr>
 <td>
-<input type="number" onkeyup="satoshiconvert()" value="" name="satoshi" size="12"> litoshi</td>
+<input type="number" onkeyup="satoshiconvert()" value="" name="satoshi" size="12"> BAToshi</td>
 </tr>
 <tr>
-<td><input type="number" onkeyup="EnteredFiatValueConvert()" value="" name="EnteredFiatValue" size="12"><small> <font color="red">  &#165; enter a JPY amount</font></small></td>
+<td><input type="number" onkeyup="EnteredFiatValueConvert()" value="" name="EnteredFiatValue" size="12"><small> <font color="red"> &#65509; enter a CNY amount</font></small></td>
 </tr>
 
 </tbody></form></table>
 <p align="left">
 <small><small>
-<a href="../satoshi_calc_JPY.htm"> LTC &#8594; JPY conversion</a> | JPY &#8594; LTC conversion<br>
-Approximate value of one LTC at time of pageload (in JPY):</small></small>
+<a href="../satoshi_calc_CNY.htm"> BAT &#8594; CNY conversion</a> | CNY &#8594; BAT conversion<br>
+Approximate value of one BAT at time of pageload (in CNY):</small></small>
 <center>
 <big>
-<div id="LTCPrice"/>Loading current price...</div>
+<div id="BATPrice"/>Loading current price...</div>
 <div id="CurrentPrice"/></div>
 </big>
-<span style="color:firebrick">Japan Yen (JPY)</span>
+<span style="color:firebrick">China Yuan (CNY)</span>
 <p>
 </center>
 <p>
 <small><small>Switch: 
-<a href="USDtoLTC.htm">USD</a> | 
-<a href="GBPtoLTC.htm">GBP</a> | 
-<a href="EURtoLTC.htm">EUR</a> | 
-<a href="CNYtoLTC.htm">CNY</a> | 
-<a href="CADtoLTC.htm">CAD</a> | 
-<a href="AUDtoLTC.htm">AUD</a> |
-<a href="INRtoLTC.htm">INR</a> |
-JPY |
-<a href="KRWtoLTC.htm">KRW</a>
+<a href="USDtoBAT.htm">USD</a> | 
+<a href="GBPtoBAT.htm">GBP</a> | 
+<a href="EURtoBAT.htm">EUR</a> | 
+CNY |
+<a href="CADtoBAT.htm">CAD</a> | 
+<a href="AUDtoBAT.htm">AUD</a> |
+<a href="INRtoBAT.htm">INR</a> |
+<a href="JPYtoBAT.htm">JPY</a> |
+<a href="KRWtoBAT.htm">KRW</a>
 <br>
 <a href="../../allcurrencies.htm">View all currencies available.</a>
 </br>
 </small></small>
 
 <script language="JavaScript">
-  $.getJSON("https://min-api.cryptocompare.com/data/price?fsym=LTC&tsyms=JPY", function(data){
-            $("#LTCPrice").text(data["JPY"].toFixed(2));
+  $.getJSON("https://min-api.cryptocompare.com/data/price?fsym=BAT&tsyms=CNY", function(data){
+            $("#BATPrice").text(data["CNY"].toFixed(4));
         }).fail(function( dat, textStatus, error ) {
                     var err = textStatus + ", " + error;
                     alert(err);
         });
 
-var CurrentPrice = document.getElementById('LTCPrice');
+var CurrentPrice = document.getElementById('BATPrice');
     CurrentPrice.innerHTML = BTCPrice.innerHTML;
 /*
 cm/inch/feet converter - credit must stay intact for use
@@ -206,18 +206,20 @@ ONMOUSEOVER="window.status='Refresh'; return true"
 ONMOUSEOUT="window.status='ah... that was good'">
 <center><img src="refresh.png" 
 width="85" height="" border="0" /></a></center>
+</DIV>
 <p>
 <center>
 <small><small>Switch converters to: </small></small>
 <div class="w3-bar">
   <a href="../../index.html" class="w3-button w3-round-large w3-orange">BTC</a>
-  <a href="JPYtoLTC.htm" class="w3-button w3-round-large w3-gray">LTC</a>
+  <a href="../../LTCconvert/index.html" class="w3-button w3-round-large w3-gray">LTC</a>
   <a href="../../ETHconvert/index.html" class="w3-button w3-round-large w3-black">ETH</a>
   <a href="../../BCHconvert/index.html" class="w3-button w3-round-large w3-green">BCH</a>
   <a href="../../DASHconvert/index.html" class="w3-button w3-round-large w3-blue">DASH</a>
   <a href="../../NEOconvert/index.html" class="w3-button w3-round-large w3-lime">NEO</a>
   <a href="../../GASconvert/index.html" class="w3-button w3-round-large w3-gray">GAS</a>
   <a href="../../DOGEconvert/index.html" class="w3-button w3-round-large w3-khaki">DGE</a>
+  <a href="../../BATconvert/index.html" class="w3-button w3-round-large w3-purple">BAT</a>
   <a href="../../GRINconvert/index.html" class="w3-button w3-round-large w3-yellow">GRIN</a>
 </div>
 </center>
