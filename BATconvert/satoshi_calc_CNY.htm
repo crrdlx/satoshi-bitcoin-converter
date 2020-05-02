@@ -1,6 +1,6 @@
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-5524326-18"></script>
 <script>
@@ -15,7 +15,7 @@
 
 <meta content="text/html" http-equiv="content-type">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<title>Litecoin Converter (LTC)</title>
+<title>Basic Attention Token Converter (BAT)</title>
 <style type="text/css">
   DIV.ETHannouncement {text-align: center }
   </style>
@@ -121,12 +121,13 @@ input[type=number]{
 <link href="http://www.br549.mywebcommunity.org/icon-hires.png" rel="icon" sizes="192x192" />
 <link href="http://www.br549.mywebcommunity.org/icon-normal.png" rel="icon" sizes="128x128" />
 
-</head><body>
+</head>
+<body>
 <big>
 <br>
 <center>
 <div class="w3-container">
-  <a href="index.html" class="w3-button w3-round-large w3-gray" > Litecoin Converter (LTC)</a>
+  <a href="index.html" class="w3-button w3-round-large w3-purple"> Basic Attention Token Converter (BAT)</a>
 </div>
 </center>
 <small>Enter a number.<br></small>
@@ -135,19 +136,19 @@ input[type=number]{
 <tbody>
 <tr>
 <td>
-<input type="number" onkeyup="BTCconvert()" value="" name="BTC" size="12"> &#x0141; LTC-<small>litecoin</small></td>
+<input type="number" onkeyup="BTCconvert()" value="" name="BTC" size="12"> BAT</td>
 </tr>
 <tr>
 <td>
-<input type="number" onkeyup="mBTCconvert()" value="" name="mBTC" width="12"> mLTC-<small>millilitecoin</small></td>
+<input type="number" onkeyup="mBTCconvert()" value="" name="mBTC" width="12"> mBAT-<small>milliBAT</small></td>
 </tr>
 <tr>
 <td>
-<input type="number" onkeyup="uBTCconvert()" value="" name="uBTC" size="12"> &#956;LTC-<small>microlitecoin</small></td>
+<input type="number" onkeyup="uBTCconvert()" value="" name="uBTC" size="12"> &#956;BAT-<small>microBAT</small></td>
 </tr>
 <tr>
 <td>
-<input type="number" onkeyup="satoshiconvert()" value="" name="satoshi" size="12"> litoshi</td>
+<input type="number" onkeyup="satoshiconvert()" value="" name="satoshi" size="12"> BAToshi</td>
 </tr>
 <tr>
 <td><input type="number" onkeyup="LiveConvert()" value="$" name="LiveConvert" size="12"> &#8776; CNY <small>at pageload</small></td>
@@ -157,11 +158,11 @@ input[type=number]{
 <p align="left">
 
 <small><small>
-LTC &#8594; CNY conversion | <a href="FiatToLTC/CNYtoLTC.htm">CNY &#8594; LTC conversion</a><br>
-Approximate value of one LTC at time of pageload (in CNY):</small></small>
+BAT &#8594; CNY conversion | <a href="FiatToBAT/CNYtoBAT.htm">CNY &#8594; BAT conversion</a><br>
+Approximate value of one BAT at time of pageload (in CNY):</small></small>
 <center>
 <big>
-<div id="LTCPrice"/>Loading current price...</div>
+<div id="BATPrice"/>Loading current price...</div>
 <div id="CurrentPrice"/></div>
 </big>
 <span style="color:firebrick">China Yuan (CNY)</span>
@@ -184,14 +185,14 @@ CNY |
 </small></small>
 
 <script language="JavaScript">
-  $.getJSON("https://min-api.cryptocompare.com/data/price?fsym=LTC&tsyms=CNY", function(data){
-            $("#LTCPrice").text(data["CNY"].toFixed(2));
+  $.getJSON("https://min-api.cryptocompare.com/data/price?fsym=BAT&tsyms=CNY", function(data){
+            $("#BATPrice").text(data["CNY"].toFixed(4));
         }).fail(function( dat, textStatus, error ) {
                     var err = textStatus + ", " + error;
                     alert(err);
         });
 
-var CurrentPrice = document.getElementById('LTCPrice');
+var CurrentPrice = document.getElementById('BATPrice');
     CurrentPrice.innerHTML = BTCPrice.innerHTML;
 
 /*
@@ -257,13 +258,14 @@ width="85" height="" border="0" /></a></center>
 <small><small>Switch converters to: </small></small>
 <div class="w3-bar">
   <a href="../index.html" class="w3-button w3-round-large w3-orange">BTC</a>
-  <a href="index.html" class="w3-button w3-round-large w3-gray">LTC</a>
+  <a href="../LTCconvert/index.html" class="w3-button w3-round-large w3-gray">LTC</a>
   <a href="../ETHconvert/index.html" class="w3-button w3-round-large w3-black">ETH</a>
   <a href="../BCHconvert/index.html" class="w3-button w3-round-large w3-green">BCH</a>
   <a href="../DASHconvert/index.html" class="w3-button w3-round-large w3-blue">DASH</a>
   <a href="../NEOconvert/index.html" class="w3-button w3-round-large w3-lime">NEO</a>
   <a href="../GASconvert/index.html" class="w3-button w3-round-large w3-gray">GAS</a>
   <a href="../DOGEconvert/index.html" class="w3-button w3-round-large w3-khaki">DGE</a>
+  <a href="index.html" class="w3-button w3-round-large w3-purple">BAT</a>
   <a href="../GRINconvert/index.html" class="w3-button w3-round-large w3-yellow">GRIN</a>
 </div>
 </center>
