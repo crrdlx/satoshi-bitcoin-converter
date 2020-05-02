@@ -14,7 +14,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <meta content="text/html" http-equiv="content-type">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<title>Satoshi Bitcoin Converter ARS-DASH</title>
+<title>Satoshi Bitcoin Converter BRL-BTC</title>
 <style type="text/css">
   DIV.ETHannouncement {text-align: center }
   </style>
@@ -124,7 +124,7 @@ input[type=number]{
 <br>
 <center>
 <div class="w3-container">
-  <a href="../DASHconvert.htm" class="w3-button w3-round-large w3-blue" > Dash Converter (DASH)</a>
+  <a href="../index.htm" class="w3-button w3-round-large w3-orange">   &#x30B7   Satoshi Bitcoin Converter   </a>
 </div>
 </center>
 <small>Enter a number.<br></small>
@@ -133,35 +133,35 @@ input[type=number]{
 <tbody>
 <tr>
 <td>
-<input type="number" onkeyup="BTCconvert()" value="" name="BTC" size="12"> DASH-<small>Dash</small></td>
+<input type="number" onkeyup="BTCconvert()" value="" name="BTC" size="12"> &#x0E3F BTC-<small>bitcoin</small></td>
 </tr>
 <tr>
 <td>
-<input type="number" onkeyup="mBTCconvert()" value="" name="mBTC" size="12"> mDASH-<small>milliDash</small></td>
+<input type="number" onkeyup="mBTCconvert()" value="" name="mBTC" size="12"> mBTC-<small>millibits/mbits</small></td>
 </tr>
 <tr>
 <td>
-<input type="number" onkeyup="uBTCconvert()" value="" name="uBTC" size="12"> &#956;DASH-<small>microDash</small></td>
+<input type="number" onkeyup="uBTCconvert()" value="" name="uBTC" size="12"> &#956;BTC-<small>microbits/bits</small></td>
 </tr>
 <tr>
 <td>
-<input type="number" onkeyup="satoshiconvert()" value="" name="satoshi" size="12"> Duff</td>
+<input type="number" onkeyup="satoshiconvert()" value="" name="satoshi" size="12"> &#x30B7 satoshi</td>
 </tr>
 <tr>
-<td><input type="number" onkeyup="EnteredFiatValueConvert()" value="" name="EnteredFiatValue" size="12"><small> <font color="red"> $ enter an ARS amount</font></small></td>
+<td><input type="number" onkeyup="EnteredFiatValueConvert()" value="" name="EnteredFiatValue" size="12"><small> <font color="red"> $ enter an BRL amount</font></small></td>
 </tr>
 
 </tbody></form></table>
 <p align="left">
 <small><small>
-<a href="../DASHconvert.htm"> DASH &#8594; ARS conversion</a> | ARS &#8594; DASH conversion<br>
-Approximate value of one Dash at time of pageload (in ARS):</small></small>
+<a href="../index.htm"> BTC &#8594; BRL conversion</a> | BRL &#8594; BTC conversion<br>
+Approximate value of one bitcoin at time of pageload (in BRL):</small></small>
 <center>
 <big>
 <div id="BTCPrice"/>Loading current price...</div>
 <div id="CurrentPrice"/></div>
 </big>
-<font color=firebrick>Argentina Peso (ARS)</font>
+<font color=firebrick>Brazil Real (BRL)</font>
 <p>
 </center>
 <small><a href="../../../allcurrencies.htm">View all available currencies.</a>
@@ -170,8 +170,8 @@ Approximate value of one Dash at time of pageload (in ARS):</small></small>
 <p>
 
 <script language="JavaScript">
-  $.getJSON("https://min-api.cryptocompare.com/data/price?fsym=DASH&tsyms=ARS", function(data){
-            $("#BTCPrice").text(data["ARS"].toFixed(2));
+  $.getJSON("https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=BRL", function(data){
+            $("#BTCPrice").text(data["BRL"].toFixed(2));
         }).fail(function( dat, textStatus, error ) {
                     var err = textStatus + ", " + error;
                     alert(err);
@@ -210,16 +210,15 @@ width="85" height="" border="0" /></a></center>
 <center>
 <small><small>Switch converters to: </small></small>
 <div class="w3-bar">
-  <a href="ARStoBTC.htm" class="w3-button w3-round-large w3-orange">BTC</a>
-  <a href="ARStoLTC.htm" class="w3-button w3-round-large w3-gray">LTC</a>
-  <a href="ARStoETH.htm" class="w3-button w3-round-large w3-black">ETH</a>
-  <a href="ARStoBCH.htm" class="w3-button w3-round-large w3-green">BCH</a>
-  <a href="ARStoDASH.htm" class="w3-button w3-round-large w3-blue">DASH</a>
-  <a href="ARStoNEO.htm" class="w3-button w3-round-large w3-lime">NEO</a>
-  <a href="ARStoGAS.htm" class="w3-button w3-round-large w3-gray">GAS</a>
-  <a href="ARStoDOGE.htm" class="w3-button w3-round-large w3-khaki">DGE</a>
-  <a href="ARStoBAT.htm" class="w3-button w3-round-large w3-purple">BAT</a>
-  <a href="ARStoGRIN.htm" class="w3-button w3-round-large w3-yellow">GRIN</a>
+  <a href="BRLtoBTC.htm" class="w3-button w3-round-large w3-orange">BTC</a>
+  <a href="BRLtoLTC.htm" class="w3-button w3-round-large w3-gray">LTC</a>
+  <a href="BRLtoETH.htm" class="w3-button w3-round-large w3-black">ETH</a>
+  <a href="BRLtoBCH.htm" class="w3-button w3-round-large w3-green">BCH</a>
+  <a href="BRLtoDASH.htm" class="w3-button w3-round-large w3-blue">DASH</a>
+  <a href="BRLtoNEO.htm" class="w3-button w3-round-large w3-lime">NEO</a>
+  <a href="BRLtoGAS.htm" class="w3-button w3-round-large w3-gray">GAS</a>
+  <a href="BRLtoDOGE.htm" class="w3-button w3-round-large w3-khaki">DGE</a>
+  <a href="BRLtoGRIN.htm" class="w3-button w3-round-large w3-yellow">GRIN</a>
 </div>
 </center>
 <p>
