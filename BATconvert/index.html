@@ -135,7 +135,7 @@ input[type=number]{
 <tbody>
 <tr>
 <td>
-<input type="number" onkeyup="BTCconvert()" value="" name="BTC" size="12"> BAT-<small>BAT</small></td>
+<input type="number" onkeyup="BTCconvert()" value="" name="BTC" size="12"> BAT</td>
 </tr>
 <tr>
 <td>
@@ -185,7 +185,7 @@ Approximate value of one BAT at time of pageload (in USD):</small></small>
 
 <script language="JavaScript">
   $.getJSON("https://min-api.cryptocompare.com/data/price?fsym=BAT&tsyms=USD", function(data){
-            $("#BATPrice").text(data["USD"].toFixed(6));
+            $("#BATPrice").text(data["USD"].toFixed(4));
         }).fail(function( dat, textStatus, error ) {
                     var err = textStatus + ", " + error;
                     alert(err);
