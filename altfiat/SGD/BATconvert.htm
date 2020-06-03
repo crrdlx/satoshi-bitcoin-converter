@@ -26,7 +26,7 @@
 
 <meta content="text/html" http-equiv="content-type">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<title>Satoshi Bitcoin Converter BAT-ARS</title>
+<title>Satoshi Bitcoin Converter BAT-ALTFIAT</title>
 <style type="text/css">
   DIV.ETHannouncement {text-align: center }
   </style>
@@ -137,7 +137,7 @@ input[type=number]{
 <br>
 <center>
 <div class="w3-container">
-  <a href="../../BATconvert/index.html" class="w3-button w3-round-large w3-purple">   Basic Attention Token Converter (BAT)</a>
+  <a href="../../BATconvert/index.html" class="w3-button w3-round-large w3-purple">   Basic Attention Token Converter (BCH)</a>
 </div>
 </center>
 <small>Enter a number.<br></small>
@@ -161,21 +161,21 @@ input[type=number]{
 <input type="number" onkeyup="satoshiconvert()" value="" name="satoshi" size="12"> BAToshi</td>
 </tr>
 <tr>
-<td><input type="number" onkeyup="LiveConvert()" value="$" name="LiveConvert" size="12"> &#8776; ARS <small>at pageload</small></td>
+<td><input type="number" onkeyup="LiveConvert()" value="$" name="LiveConvert" size="12"> &#8776; ALTFIAT <small>at pageload</small></td>
 </tr>
 
 </tbody></form></table>
 <p align="left">
 
 <small><small>
-BCH &#8594; ARS conversion | <a href="FiatToBTC/ARStoBCH.htm">ARS &#8594; BCH conversion</a><br>
-Approximate value of one bitcoin cash at time of pageload (in ARS):</small></small>
+BCH &#8594; ALTFIAT conversion | <a href="FiatToBTC/ALTFIATtoBCH.htm">ALTFIAT &#8594; BCH conversion</a><br>
+Approximate value of one Basic Attention Token at time of pageload (in ALTFIAT):</small></small>
 <center>
 <big>
 <div id="BTCPrice"/>Loading current price...</div>
 <div id="CurrentPrice"/></div>
 </big>
-<font color=firebrick>Arentina Peso (ARS)</font>
+<font color=firebrick>Arentina Peso (ALTFIAT)</font>
 <p>
 </center>
 <small><a href="../../allcurrencies.htm">View all available currencies.</a>
@@ -183,8 +183,8 @@ Approximate value of one bitcoin cash at time of pageload (in ARS):</small></sma
 </small>
 
 <script language="JavaScript">
-  $.getJSON("https://min-api.cryptocompare.com/data/price?fsym=BAT&tsyms=ARS", function(data){
-            $("#BTCPrice").text(data["ARS"].toFixed(4));
+  $.getJSON("https://min-api.cryptocompare.com/data/price?fsym=BCH&tsyms=ALTFIAT", function(data){
+            $("#BTCPrice").text(data["ALTFIAT"].toFixed(4));
         }).fail(function( dat, textStatus, error ) {
                     var err = textStatus + ", " + error;
                     alert(err);
