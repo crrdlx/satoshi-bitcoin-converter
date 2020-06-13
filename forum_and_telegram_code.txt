@@ -1,0 +1,5 @@
+﻿Forum and telegram social media buttons code:
+
+
+
+<! -- Leave feedback or comment at the <a href="http://satoshitalk.boards.net/board/1/general-discussion" target="_blank">Satoshi Bitcoin Converter forum - satoshitalk.boards.net</a> or on the Satoshi Bitcoin App Telegram at <a href="http://t.me/SatoshiBitcoinConverter">t.me/SatoshiBitcoinConverter</a> -->
