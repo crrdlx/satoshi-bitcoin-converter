@@ -12,10 +12,21 @@
 </script>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-5524326-18"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-5524326-18');
+</script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
 <meta content="text/html" http-equiv="content-type">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<title>Litecoin Converter (LTC)</title>
+<title>Satoshi Bitcoin Converter NEO-XOF</title>
 <style type="text/css">
   DIV.ETHannouncement {text-align: center }
   </style>
@@ -126,7 +137,7 @@ input[type=number]{
 <br>
 <center>
 <div class="w3-container">
-  <a href="index.html" class="w3-button w3-round-large w3-gray" > Litecoin Converter (LTC)</a>
+  <a href="index.htm" class="w3-button w3-round-large w3-lime"> NEO Converter </a>
 </div>
 </center>
 <small>Enter a number.<br></small>
@@ -135,63 +146,51 @@ input[type=number]{
 <tbody>
 <tr>
 <td>
-<input type="number" onkeyup="BTCconvert()" value="" name="BTC" size="12"> &#x0141; LTC-<small>litecoin</small></td>
+<input type="number" onkeyup="BTCconvert()" value="" name="BTC" size="12"> &#x0E3F BTC-<small>bitcoin</small></td>
 </tr>
 <tr>
 <td>
-<input type="number" onkeyup="mBTCconvert()" value="" name="mBTC" width="12"> mLTC-<small>millilitecoin</small></td>
+<input type="number" onkeyup="mBTCconvert()" value="" name="mBTC" width="12"> mBTC-<small>millibits/mbits</small></td>
 </tr>
 <tr>
 <td>
-<input type="number" onkeyup="uBTCconvert()" value="" name="uBTC" size="12"> &#956;LTC-<small>microlitecoin</small></td>
+<input type="number" onkeyup="uBTCconvert()" value="" name="uBTC" size="12"> &#956;BTC-<small>microbits/bits</small></td>
 </tr>
 <tr>
 <td>
-<input type="number" onkeyup="satoshiconvert()" value="" name="satoshi" size="12"> litoshi</td>
+<input type="number" onkeyup="satoshiconvert()" value="" name="satoshi" size="12"> &#x30B7 satoshi</td>
 </tr>
 <tr>
-<td><input type="number" onkeyup="LiveConvert()" value="$" name="LiveConvert" size="12"> &#8776; USD <small>at pageload</small></td>
+<td><input type="number" onkeyup="LiveConvert()" value="$" name="LiveConvert" size="12"> &#8776; ARS <small>at pageload</small></td>
 </tr>
 
 </tbody></form></table>
 <p align="left">
 
 <small><small>
-LTC &#8594; USD conversion | <a href="FiatToLTC/USDtoLTC.htm">USD &#8594; LTC conversion</a><br>
-Approximate value of one LTC at time of pageload (in USD):</small></small>
+NEO &#8594; XOF conversion | <a href="FiatToBTC/XOFtoNEO.htm">XOF &#8594; NEO conversion</a><br>
+Approximate value of one NEO at time of pageload (in XOF):</small></small>
 <center>
 <big>
-<div id="LTCPrice"/>Loading current price...</div>
+<div id="BTCPrice"/>Loading current price...</div>
 <div id="CurrentPrice"/></div>
 </big>
-<span style="color:firebrick">United States Dollar (USD)</span>
+<font color=firebrick>West African CFA Franc (XOF)</font>
 <p>
 </center>
-<p>
-<small><small>Switch: 
-  USD | 
-<a href="satoshi_calc_GBP.htm">GBP</a> | 
-<a href="satoshi_calc_EUR.htm">EUR</a> | 
-<a href="satoshi_calc_CNY.htm">CNY</a> | 
-<a href="satoshi_calc_CAD.htm">CAD</a> | 
-<a href="satoshi_calc_AUD.htm">AUD</a> |
-<a href="satoshi_calc_INR.htm">INR</a> |
-<a href="satoshi_calc_JPY.htm">JPY</a> |
-<a href="satoshi_calc_KRW.htm">KRW</a>
-<br>
-<a href="../allcurrencies.htm">View all currencies available.</a>
+<small><a href="../../allcurrencies.htm">View all available currencies.</a>
 </br>
-</small></small>
+</small>
 
 <script language="JavaScript">
-  $.getJSON("https://min-api.cryptocompare.com/data/price?fsym=LTC&tsyms=USD", function(data){
-            $("#LTCPrice").text(data["USD"].toFixed(2));
+  $.getJSON("https://min-api.cryptocompare.com/data/price?fsym=NEO&tsyms=XOF", function(data){
+            $("#BTCPrice").text(data["XOF"].toFixed(2));
         }).fail(function( dat, textStatus, error ) {
                     var err = textStatus + ", " + error;
                     alert(err);
         });
 
-var CurrentPrice = document.getElementById('LTCPrice');
+var CurrentPrice = document.getElementById('BTCPrice');
     CurrentPrice.innerHTML = BTCPrice.innerHTML;
 
 /*
@@ -239,43 +238,36 @@ LiveConvert.value = (CurrentPrice.innerHTML);
 }
 </script>
 
-
 <p></p>
 
 <small><small>
-<a href="../about.htm">About</a> | <a href="http://br549.mywebcommunity.org/dev_notes.html">Developer Notes</a> | <a href="http://br549.mywebcommunity.org/donate.htm" target="blank">Free Stuff</a> | <a href="http://br549.mywebcommunity.org/donate.htm" target="blank">Thanks</a> | <a href="../privacy.htm">Privacy Policy</a> | Exchange rates powered by <a href="https://www.cryptocompare.com/api" target="_blank">CryptoCompare</a><br>
+<a href="../../../about.htm">About</a> | <a href="http://br549.mywebcommunity.org/dev_notes.html">Developer Notes</a> | <a href="http://br549.mywebcommunity.org/donate.htm" target="blank">Free Stuff</a> | <a href="http://br549.mywebcommunity.org/donate.htm" target="blank">Thanks</a> | <a href="../../../privacy.htm">Privacy Policy</a> | Exchange rates powered by <a href="https://www.cryptocompare.com/api" target="_blank">CryptoCompare</a><br>
 </small></small>
 
 <p>
 <a href="javascript:document.location.reload();"
 ONMOUSEOVER="window.status='Refresh'; return true"
 ONMOUSEOUT="window.status='ah... that was good'">
-<center><img src="refresh.png" 
+<center><img src="../refresh.png" 
 width="85" height="" border="0" /></a></center>
 <p>
 <center>
 <small><small>Switch converters to: </small></small>
 <div class="w3-bar">
-  <a href="../index.html" class="w3-button w3-round-large w3-orange">BTC</a>
-  <a href="index.html" class="w3-button w3-round-large w3-gray">LTC</a>
-  <a href="../ETHconvert/index.html" class="w3-button w3-round-large w3-black">ETH</a>
-  <a href="../BCHconvert/index.html" class="w3-button w3-round-large w3-green">BCH</a>
-  <a href="../DASHconvert/index.html" class="w3-button w3-round-large w3-blue">DASH</a>
-  <a href="../NEOconvert/index.html" class="w3-button w3-round-large w3-lime">NEO</a>
-  <a href="../GASconvert/index.html" class="w3-button w3-round-large w3-gray">GAS</a>
-  <a href="../DOGEconvert/index.html" class="w3-button w3-round-large w3-khaki">DGE</a>
-  <a href="../BATconvert/index.html" class="w3-button w3-round-large w3-purple">BAT</a>
-  <a href="../GRINconvert/index.html" class="w3-button w3-round-large w3-yellow">GRIN</a>
+  <a href="index.htm" class="w3-button w3-round-large w3-orange">BTC</a>
+  <a href="LTCconvert.htm" class="w3-button w3-round-large w3-gray">LTC</a>
+  <a href="ETHconvert.htm" class="w3-button w3-round-large w3-black">ETH</a>
+  <a href="BCHconvert.htm" class="w3-button w3-round-large w3-green">BCH</a>
+  <a href="DASHconvert.htm" class="w3-button w3-round-large w3-blue">DASH</a>
+  <a href="NEOconvert.htm" class="w3-button w3-round-large w3-lime">NEO</a>
+  <a href="GASconvert.htm" class="w3-button w3-round-large w3-gray">GAS</a>
+  <a href="DOGEconvert.htm" class="w3-button w3-round-large w3-khaki">DGE</a>
+  <a href="BATconvert.htm" class="w3-button w3-round-large w3-purple">BAT</a>
+  <a href="GRINconvert.htm" class="w3-button w3-round-large w3-yellow">GRIN</a>
 </div>
 </center>
 <p>
-  <center>
-    <div class="w3-bar">
-      <a href="../allcurrencies.htm" class="w3-button w3-round-large w3-green">&nbsp; More Fiat Currencies &nbsp; </a> <a href="../more/index.html" class="w3-button w3-round-large w3-orange">More Cryptocurrencies</a>
-    </div>
-    </center>
-<p>
-<center><img src="icon36x36.jpg" border="0" width=18></center>
+<center><img src="../../icon36x36.jpg" border="0" width=18></center>
 <!-- Start of StatCounter Code for Default Guide -->
 <script type="text/javascript">
 var sc_project=9064341; 

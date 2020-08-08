@@ -32,7 +32,7 @@
 
 <meta content="text/html" http-equiv="content-type">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<title>Satoshi Bitcoin Converter BTC-BRL</title>
+<title>Satoshi Bitcoin Converter BTC-ALTFIAT</title>
 <style type="text/css">
   DIV.ETHannouncement {text-align: center }
   </style>
@@ -167,21 +167,21 @@ input[type=number]{
 <input type="number" onkeyup="satoshiconvert()" value="" name="satoshi" size="12"> &#x30B7 satoshi</td>
 </tr>
 <tr>
-<td><input type="number" onkeyup="LiveConvert()" value="$" name="LiveConvert" size="12"> &#8776; BRL <small>at pageload</small></td>
+<td><input type="number" onkeyup="LiveConvert()" value="$" name="LiveConvert" size="12"> &#8776; ALTFIAT <small>at pageload</small></td>
 </tr>
 
 </tbody></form></table>
 <p align="left">
 
 <small><small>
-BTC &#8594; BRL conversion | <a href="FiatToBTC/BRLtoBTC.htm">BRL &#8594; BTC conversion</a><br>
-Approximate value of one bitcoin at time of pageload (in BRL):</small></small>
+BTC &#8594; ALTFIAT conversion | <a href="FiatToBTC/ALTFIATtoBTC.htm">ALTFIAT &#8594; BTC conversion</a><br>
+Approximate value of one bitcoin at time of pageload (in ALTFIAT):</small></small>
 <center>
 <big>
 <div id="BTCPrice"/>Loading current price...</div>
 <div id="CurrentPrice"/></div>
 </big>
-<font color=firebrick>Brazil Real (BRL)</font>
+<font color=firebrick>NATION FIAT NAME (ALTFIAT)</font>
 <p>
 </center>
 <small><a href="../../allcurrencies.htm">View all available currencies.</a>
@@ -189,8 +189,8 @@ Approximate value of one bitcoin at time of pageload (in BRL):</small></small>
 </small>
 
 <script language="JavaScript">
-  $.getJSON("https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=BRL", function(data){
-            $("#BTCPrice").text(data["BRL"].toFixed(2));
+  $.getJSON("https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=ALTFIAT", function(data){
+            $("#BTCPrice").text(data["ALTFIAT"].toFixed(2));
         }).fail(function( dat, textStatus, error ) {
                     var err = textStatus + ", " + error;
                     alert(err);
@@ -268,6 +268,7 @@ width="85" height="" border="0" /></a></center>
   <a href="NEOconvert.htm" class="w3-button w3-round-large w3-lime">NEO</a>
   <a href="GASconvert.htm" class="w3-button w3-round-large w3-gray">GAS</a>
   <a href="DOGEconvert.htm" class="w3-button w3-round-large w3-khaki">DGE</a>
+  <a href="BATconvert.htm" class="w3-button w3-round-large w3-purple">BAT</a>
   <a href="GRINconvert.htm" class="w3-button w3-round-large w3-yellow">GRIN</a>
 </div>
 </center>
