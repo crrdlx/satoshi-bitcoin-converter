@@ -7,13 +7,14 @@ The AARD and the BRL will need to be changed to whatever new fiat code is desire
 workflow...
 
 . in "FiatToBTC" change AARD to whatever the new fiat is
+
 . in "altfiat" folder, go to new fiat's index file
-.. change ctrl+H ALTFIAT to new fiat ticker, change them all
+.. change ctrl+H BRL (maybe ALTFIAT) to new fiat ticker, change them all
 .. line 184 or 178, change to the new country and fiat names
 .. do this for each cryptoconvert.htm
 
 . in "FiatToBTC", change all BRL to new fiat ticker, and all ALTFIAT to new fiat
-. change all AARD to the appropriate cryto ticker
+. change all AARD to the appropriate crypto ticker
 . change all-but-last two BCH to new fiat ticker
 . change color from green to color of fiat
-. change Argentina Peso to new nation and fiat names
+. line 164, change Argentina Peso to new nation and fiat names
