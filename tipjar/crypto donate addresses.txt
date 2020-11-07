@@ -21,6 +21,9 @@ Ethereum
 Ethereum Classic
 0x69b17Ef9C3383Bf5074E6FcF1FE6c74cABDa8377
 
+Bitcoin Cash
+16f3M3H2QUgbhPSZVw6puDXqGqdnZZgXPX
+
 Litecoin
 LUDMzwdVYDjc9apEFqNcpfgRLePB5be6SB
 DASH
