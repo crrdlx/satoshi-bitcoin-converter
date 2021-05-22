@@ -196,53 +196,53 @@
    alert(err);
           });
   
-  var CurrentPrice = document.getElementById('BTCPrice');
-   CurrentPrice.innerHTML = BTCPrice.innerHTML;
-  
-  /*
-  cm/inch/feet converter - credit must stay intact for use
-  By Ada Shimar ada@chalktv.com
-  For this script and more,
-  Visit http://javascriptkit.com
-  */
-  function BTCconvert(){
-  with (document.BTCunitconverter){
-  mBTC.value = (BTC.value*1000);
-  uBTC.value = (BTC.value*1000000);
-  satoshi.value = (BTC.value*100000000);
-  LiveConvert.value = (BTC.value*CurrentPrice.innerHTML);
-  }
-  }
-  function mBTCconvert(){
-  with (document.BTCunitconverter){
-  BTC.value = (mBTC.value/1000);
-  uBTC.value = (mBTC.value*1000);
-  satoshi.value = (mBTC.value*100000);
-  LiveConvert.value = (mBTC.value*CurrentPrice.innerHTML/1000);
-  }
-  }
-  function uBTCconvert(){
-  with (document.BTCunitconverter){
-  BTC.value = (uBTC.value/1000000);
-  mBTC.value = (uBTC.value/1000);
-  satoshi.value = (uBTC.value*100);
-  LiveConvert.value = (uBTC.value*CurrentPrice.innerHTML/1000000);
-  }
-  }
-  function satoshiconvert(){
-  with (document.BTCunitconverter){
-  BTC.value = (satoshi.value/100000000);
-  mBTC.value = (satoshi.value/100000);
-  uBTC.value = (satoshi.value/100);
-  LiveConvert.value = (satoshi.value*CurrentPrice.innerHTML/100000000);
-  }
-  }
-  function LiveConvert(){
-  with (document.BTCunitconverter){
-  LiveConvert.value = (CurrentPrice.innerHTML);
-  }
-  }
-  </script>
+          var CurrentPrice = document.getElementById('BTCPrice');
+    CurrentPrice.innerHTML = BTCPrice.innerHTML;
+
+/*
+cm/inch/feet converter - credit must stay intact for use
+By Ada Shimar ada@chalktv.com
+For this script and more,
+Visit http://javascriptkit.com
+*/
+function BTCconvert(){
+with (document.BTCunitconverter){
+mBTC.value = (BTC.value*1000);
+uBTC.value = (BTC.value*1000000);
+satoshi.value = (BTC.value*100000000);
+LiveConvert.value = (BTC.value*CurrentPrice.innerHTML);
+}
+}
+function mBTCconvert(){
+with (document.BTCunitconverter){
+BTC.value = (mBTC.value/1000);
+uBTC.value = (mBTC.value*1000);
+satoshi.value = (mBTC.value*100000);
+LiveConvert.value = (mBTC.value*CurrentPrice.innerHTML/1000);
+}
+}
+function uBTCconvert(){
+with (document.BTCunitconverter){
+BTC.value = (uBTC.value/1000000);
+mBTC.value = (uBTC.value/1000);
+satoshi.value = (uBTC.value*100);
+LiveConvert.value = (uBTC.value*CurrentPrice.innerHTML/1000000);
+}
+}
+function satoshiconvert(){
+with (document.BTCunitconverter){
+BTC.value = (satoshi.value/100000000);
+mBTC.value = (satoshi.value/100000);
+uBTC.value = (satoshi.value/100);
+LiveConvert.value = (satoshi.value*CurrentPrice.innerHTML/100000000);
+}
+}
+function LiveConvert(){
+with (document.BTCunitconverter){
+LiveConvert.value = (CurrentPrice.innerHTML);
+}
+}
+</script>
   
   <p></p>
   
