@@ -1,310 +1,255 @@
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta content="text/html" http-equiv="content-type">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<title>Satoshi Bitcoin Converter</title>
-<style type="text/css">
-  DIV.ETHannouncement {text-align: center }
-  </style>
-
-
-
-<link rel="manifest" href="manifest.json">
-<script src="config.js"></script>
-<script src="src/App.js"></script>
-<script src="src/main.js"></script>
-
-
-
-<link rel="icon" 
-      type="image/ico" 
-      href="http://satoshibitcoinconverter.com/favicon.ico">
-      
-  <STYLE>
-html {
-  font-size: medium;
-}
-body {
-  background-color: #f6f6f6;
-  color: #330;
-  font-family: verdana, georgia, times, serif;
-  margin: ;
-  max-width: 80em;
-  padding: 0 1em;
-  width: auto;
-  font-size: 1rem;
-  line-height: 1.4;
-}
-a {
-  color: #1e6b8c;
-  font-size: 1em;
-  text-decoration: none;
-  transition-delay: 0.1s;
-  transition-duration: 0.3s;
-  transition-property: color, background-color;
-  transition-timing-function: linear;
-}
-a:visited {
-  color: #6f32ad;
-  font-size: 1em;
-}
-a:hover {
-  background: #b6cff9;
-  font-size: 1em;
-  text-decoration: underline;
-}
-a:active {
-  background-color: #427fed;
-  color: #fffff6;
-  color: white;
-  font-size: 1em;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #black;
-  font-weight: bold;
-  line-height: 1.2;
-  margin-bottom: 1em;
-  margin-top: 2em;
-}
-h1 {
-  font-size: 2.2em;
-  text-align: center;
-}
-h2 {
-  font-size: 1.8em;
-  border-bottom: solid 0.1rem #703820;
-}
-h3 {
-  font-size: 1.5em;
-}
-h4 {
-  font-size: 1.3em;
-  text-decoration: underline;
-}
-h5 {
-  font-size: 1.2em;
-  font-style: italic;
-}
-h6 {
-  font-size: 1.1em;
-  margin-bottom: 0.5rem;
-}
-pre,
-code,
-xmp {
-  font-family: courier;
-  font-size: 1rem;
-  line-height: 1.4;
-  white-space: pre-wrap;
-}
-input[type=number]{
-    width: 135px;
-} 
-</STYLE>
-  
- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-
-<link href="http://www.satoshibitcoinconverter.com/apple-touch-icon.png" rel="apple-touch-icon" />
-<link href="http://www.satoshibitcoinconverter.com/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
-<link href="http://www.satoshibitcoinconverter.com/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
-<link href="http://www.satoshibitcoinconverter.com/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
-<link href="http://www.satoshibitcoinconverter.com/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180" />
-<link href="http://www.satoshibitcoinconverter.com/icon-hires.png" rel="icon" sizes="192x192" />
-<link href="http://www.satoshibitcoinconverter.com/icon-normal.png" rel="icon" sizes="128x128" />
+  <meta charset="UTF-8">
+  <title>Satoshi Bitcoin Converter v5</title>
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="A simple converter tool to swap between Bitcoin, satoshi, and USD dollar units.">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <script src="config.js"></script>
+  <script src="src/App.js"></script>
+  <script src="src/main.js"></script>
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+        <!--[if lte IE 8]>
+            <link rel="stylesheet" href="css/layouts/side-menu-old-ie.css">
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+            <link rel="stylesheet" href="css/layouts/side-menu.css">
+        <!--<![endif]-->
+<link rel="icon" type="image/ico" href="http://satoshibitcoinconverter.com/favicon.ico">
+<STYLE>
+            html {
+              font-size: medium;
+            }
+            body {
+              background-color: #f6f6f6;
+              color: #330;
+              font-family: verdana, georgia, times, serif;
+              margin: ;
+              max-width: 80em;
+              padding: 0 1em;
+              width: auto;
+              font-size: 1rem;
+              line-height: 1.4;
+            }
+            a {
+              color: #1e6b8c;
+              font-size: 1em;
+              text-decoration: none;
+              transition-delay: 0.1s;
+              transition-duration: 0.3s;
+              transition-property: color, background-color;
+              transition-timing-function: linear;
+            }
+            a:visited {
+              color: #6f32ad;
+              font-size: 1em;
+            }
+            a:hover {
+              background: #b6cff9;
+              font-size: 1em;
+              text-decoration: underline;
+            }
+            a:active {
+              background-color: #427fed;
+              color: #fffff6;
+              color: white;
+              font-size: 1em;
+            }
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+              color: #black;
+              font-weight: bold;
+              line-height: 1.2;
+              margin-bottom: 1em;
+              margin-top: 2em;
+            }
+            h1 {
+              font-size: 2.2em;
+              text-align: center;
+            }
+            h2 {
+              font-size: 1.8em;
+              border-bottom: solid 0.1rem #703820;
+            }
+            h3 {
+              font-size: 1.5em;
+            }
+            h4 {
+              font-size: 1.3em;
+              text-decoration: underline;
+            }
+            h5 {
+              font-size: 1.2em;
+              font-style: italic;
+            }
+            h6 {
+              font-size: 1.1em;
+              margin-bottom: 0.5rem;
+            }
+            pre,
+            code,
+            xmp {
+              font-family: courier;
+              font-size: 1rem;
+              line-height: 1.4;
+              white-space: pre-wrap;
+            }
+            input[type=number]{
+                width: 135px;
+            }
+            smalltype {  /* this is smallsized font text, but it can be named as anything. Include it with <p class="smalltype">You can use code to get <smalltype>small text like this.</smalltype>*/
+            font-style: normal;
+            font-size: 65%;
+            color: #000000;
+            /* text-transform: uppercase; */
+            }  
+            </STYLE>
+             <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </head>
+<body onload="init()">
+  <big>
+    <br>
+    <center>
+    <div class="w3-container">
+      <a href="index.html" class="w3-button w3-round-large w3-orange">   &#x30B7   Satoshi Bitcoin Converter.com</a><br>
+    </div>
+    <br>
 
-<body>
+    <center><small>Enter a bitcoin number.</small></center></small>
+    
+    <table border="0" cellpadding="0" cellspacing="0" width="" align="center">
+    <form name="BTCunitconverter">
+    <tbody>
+    <tr>
+    <td>
+    <input type="number" onkeyup="BTCconvert()" value="" name="BTC" size="12"> &#x0E3F BTC<small> -bitcoin</small></td>
+    </tr>
+    <tr>
+    <td>
+    <input type="number" onkeyup="mBTCconvert()" value="" name="mBTC" width="12"> mBTC<small> -millibits/mbits</small></td>
+    </tr>
+    <tr>
+    <td>
+    <input type="number" onkeyup="uBTCconvert()" value="" name="uBTC" size="12"> &#956;BTC<small> -microbits/bits</small></td>
+    </tr>
+    <tr>
+    <td>
+    <input type="number" onkeyup="satoshiconvert()" value="" name="satoshi" size="12"> &#x30B7 sats</td>
+    </tr>
+    <tr>
+    <td><input type="number" onkeyup="LiveConvert()" value="$" name="LiveConvert" size="12"> &#8776; <a href="FiatToBTC/USDtoBTC.html">USD</a> <small>at pageload</small></td>
+    </tr>
+    
+    </tbody></form></table>
+    <p align="center">
+    
+    <small><small>
+      <a href="" class="w3-button w3-margin-bottom w3-round-large w3-gray">BTC &#8594; USD conversion</a> &nbsp; <a href="FiatToBTC/USDtoBTC.html" class="w3-button w3-margin-bottom w3-round-large w3-black">USD &#8594; BTC conversion</a><br>
 
-<big>
-<br>
-<center>
-<div class="w3-container">
-  <a href="index.html" class="w3-button w3-round-large w3-orange">   &#x30B7   Satoshi Bitcoin Converter   </a><br>
-</div>
-<br>
+    Approximate value of one bitcoin at time of pageload (in USD):</small></small>
+    <center>
+    <big>
+    <div id="BTCPrice"/>Loading current price... If stuck here, try a different browser, see Developer notes.</div>
+    <div id="CurrentPrice"/></div>
+    </big>
+    <span style="color:firebrick">United States Dollar (USD)</span>
+    <p>
+    </center>
+    
+    <script language="JavaScript">
+      $.getJSON("https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD", function(data){
+                $("#BTCPrice").text(data["USD"].toFixed(2));
+            }).fail(function( dat, textStatus, error ) {
+                        var err = textStatus + ", " + error;
+                        alert(err);
+            });
+    
+    var CurrentPrice = document.getElementById('BTCPrice');
+        CurrentPrice.innerHTML = BTCPrice.innerHTML;
+    
+    /*
+    cm/inch/feet converter - credit must stay intact for use
+    By Ada Shimar ada@chalktv.com
+    For this script and more,
+    Visit http://javascriptkit.com
+    */
+    function BTCconvert(){
+    with (document.BTCunitconverter){
+    mBTC.value = (BTC.value*1000);
+    uBTC.value = (BTC.value*1000000);
+    satoshi.value = (BTC.value*100000000);
+    LiveConvert.value = (BTC.value*CurrentPrice.innerHTML);
+    }
+    }
+    function mBTCconvert(){
+    with (document.BTCunitconverter){
+    BTC.value = (mBTC.value/1000);
+    uBTC.value = (mBTC.value*1000);
+    satoshi.value = (mBTC.value*100000);
+    LiveConvert.value = (mBTC.value*CurrentPrice.innerHTML/1000);
+    }
+    }
+    function uBTCconvert(){
+    with (document.BTCunitconverter){
+    BTC.value = (uBTC.value/1000000);
+    mBTC.value = (uBTC.value/1000);
+    satoshi.value = (uBTC.value*100);
+    LiveConvert.value = (uBTC.value*CurrentPrice.innerHTML/1000000);
+    }
+    }
+    function satoshiconvert(){
+    with (document.BTCunitconverter){
+    BTC.value = (satoshi.value/100000000);
+    mBTC.value = (satoshi.value/100000);
+    uBTC.value = (satoshi.value/100);
+    LiveConvert.value = (satoshi.value*CurrentPrice.innerHTML/100000000);
+    }
+    }
+    function LiveConvert(){
+    with (document.BTCunitconverter){
+    LiveConvert.value = (CurrentPrice.innerHTML);
+    }
+    }
+    </script>
+    
+    <p></p>
+    
+    <small><small>
+    <a href="pages/about.html">About</a> | <a href="pages/dev_notes.html">Developer Notes</a> | Exchange rates powered by <a href="https://www.cryptocompare.com/api" target="_blank">CryptoCompare</a><br>
+    </small></small>
+    
+    <p>
+    <a href="javascript:document.location.reload();"
+    ONMOUSEOVER="window.status='Refresh'; return true"
+    ONMOUSEOUT="window.status='ah... that was good'">
+    <center><img src="img/refresh.png" 
+    width="60" height="" border="0" /></a></center>
 
-</center>
-<small>Enter a number.<br></small>
+    <p>
+    <center><img src="img/icon_120.png" border="0" width=18></center>
+    <p>
+      
+    <p>
 
-<table border="0" cellpadding="0" cellspacing="0" width="">
-<form name="BTCunitconverter">
-<tbody>
-<tr>
-<td>
-<input type="number" onkeyup="BTCconvert()" value="" name="BTC" size="12"> &#x0E3F BTC-<small>bitcoin</small></td>
-</tr>
-<tr>
-<td>
-<input type="number" onkeyup="mBTCconvert()" value="" name="mBTC" width="12"> mBTC-<small>millibits/mbits</small></td>
-</tr>
-<tr>
-<td>
-<input type="number" onkeyup="uBTCconvert()" value="" name="uBTC" size="12"> &#956;BTC-<small>microbits/bits</small></td>
-</tr>
-<tr>
-<td>
-<input type="number" onkeyup="satoshiconvert()" value="" name="satoshi" size="12"> &#x30B7 satoshi</td>
-</tr>
-<tr>
-<td><input type="number" onkeyup="LiveConvert()" value="$" name="LiveConvert" size="12"> &#8776; USD <small>at pageload</small></td>
-</tr>
-
-</tbody></form></table>
-<p align="left">
-
-<small><small>
-BTC &#8594; USD conversion | <a href="FiatToBTC/USDtoBTC.htm">USD &#8594; BTC conversion</a><br>
-Approximate value of one bitcoin at time of pageload (in USD):</small></small>
-<center>
-<big>
-<div id="BTCPrice"/>Stuck loading? Try a different browser, see Developer notes.</div>
-<div id="CurrentPrice"/></div>
-</big>
-<span style="color:firebrick">United States Dollar (USD)</span>
-<p>
-</center>
-<p>
-<small><small>Switch: 
-  USD | 
-<a href="satoshi_calc_GBP.htm">GBP</a> | 
-<a href="satoshi_calc_EUR.htm">EUR</a> | 
-<a href="satoshi_calc_CNY.htm">CNY</a> | 
-<a href="satoshi_calc_CAD.htm">CAD</a> | 
-<a href="satoshi_calc_AUD.htm">AUD</a> |
-<a href="satoshi_calc_INR.htm">INR</a> |
-<a href="satoshi_calc_JPY.htm">JPY</a> |
-<a href="satoshi_calc_KRW.htm">KRW</a>
-<br>
-<a href="allcurrencies.htm">View all currencies available.</a> | <a href="more/index.html">More cryptocurrencies</a>.
-</br>
-</small></small>
-
-<script language="JavaScript">
-  $.getJSON("https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD", function(data){
-            $("#BTCPrice").text(data["USD"].toFixed(2));
-        }).fail(function( dat, textStatus, error ) {
-                    var err = textStatus + ", " + error;
-                    alert(err);
-        });
-
-var CurrentPrice = document.getElementById('BTCPrice');
-    CurrentPrice.innerHTML = BTCPrice.innerHTML;
-
-/*
-cm/inch/feet converter - credit must stay intact for use
-By Ada Shimar ada@chalktv.com
-For this script and more,
-Visit http://javascriptkit.com
-*/
-function BTCconvert(){
-with (document.BTCunitconverter){
-mBTC.value = (BTC.value*1000);
-uBTC.value = (BTC.value*1000000);
-satoshi.value = (BTC.value*100000000);
-LiveConvert.value = (BTC.value*CurrentPrice.innerHTML);
-}
-}
-function mBTCconvert(){
-with (document.BTCunitconverter){
-BTC.value = (mBTC.value/1000);
-uBTC.value = (mBTC.value*1000);
-satoshi.value = (mBTC.value*100000);
-LiveConvert.value = (mBTC.value*CurrentPrice.innerHTML/1000);
-}
-}
-function uBTCconvert(){
-with (document.BTCunitconverter){
-BTC.value = (uBTC.value/1000000);
-mBTC.value = (uBTC.value/1000);
-satoshi.value = (uBTC.value*100);
-LiveConvert.value = (uBTC.value*CurrentPrice.innerHTML/1000000);
-}
-}
-function satoshiconvert(){
-with (document.BTCunitconverter){
-BTC.value = (satoshi.value/100000000);
-mBTC.value = (satoshi.value/100000);
-uBTC.value = (satoshi.value/100);
-LiveConvert.value = (satoshi.value*CurrentPrice.innerHTML/100000000);
-}
-}
-function LiveConvert(){
-with (document.BTCunitconverter){
-LiveConvert.value = (CurrentPrice.innerHTML);
-}
-}
-</script>
-
-<p></p>
-
-<small><small>
-<a href="about.htm">About</a> | <a href="dev_notes.html">Developer Notes</a> | <a href="donate.htm" target="blank">Free Stuff</a> | <a href="donate.htm" target="blank">Thanks</a> | <a href="privacy.htm">Privacy Policy</a> | Exchange rates powered by <a href="https://www.cryptocompare.com/api" target="_blank">CryptoCompare</a><br>
-</small></small>
-
-<p>
-<a href="javascript:document.location.reload();"
-ONMOUSEOVER="window.status='Refresh'; return true"
-ONMOUSEOUT="window.status='ah... that was good'">
-<center><img src="refresh.png" 
-width="85" height="" border="0" /></a></center>
-<p>
-<center>
-<small><small>Switch converters to: </small></small>
-<div class="w3-bar">
-  <a href="index.html" class="w3-button w3-round-large w3-orange">BTC</a>
-  <a href="LTCconvert/index.html" class="w3-button w3-round-large w3-gray">LTC</a>
-  <a href="ETHconvert/index.html" class="w3-button w3-round-large w3-black">ETH</a>
-  <a href="BCHconvert/index.html" class="w3-button w3-round-large w3-green">BCH</a>
-  <a href="DASHconvert/index.html" class="w3-button w3-round-large w3-blue">DASH</a>
-  <a href="NEOconvert/index.html" class="w3-button w3-round-large w3-lime">NEO</a>
-  <a href="GASconvert/index.html" class="w3-button w3-round-large w3-gray">GAS</a>
-  <a href="DOGEconvert/index.html" class="w3-button w3-round-large w3-khaki">DGE</a>
-  <a href="BATconvert/index.html" class="w3-button w3-round-large w3-purple">BAT</a>
-  <a href="GRINconvert/index.html" class="w3-button w3-round-large w3-yellow">GRIN</a>
-</div>
-<p>
-  <div class="w3-bar">
-    <a href="allcurrencies.htm" class="w3-button w3-round-large w3-green">&nbsp; More Fiat Currencies &nbsp; </a> <a href="more/index.html" class="w3-button w3-round-large w3-orange">More Cryptocurrencies</a>
-  </div>
-</center>
-<p>
-<center><img src="icon36x36.jpg" border="0" width=18></center>
-<p>
-  
-<center><small><small><a href="homescreen-icon.html">Tell your iPhone friends they can use the web app version of "SBC". Here's how.</a></small></small></center>
-<p>
-<center>
-  <small><small>Tired of big tech? Try the Hive blockchain...a <u>decentralized</u> alternative. <i>You </i>own your content and <i>you</i> earn from it. Try the <a href="https://hiveonboard.com?ref=crrdlx" target="_blank">Hive blockchain</a>.</small></small>
-  <br><div class="w3-container">
-    <a href="https://hive.blog/bitcoin/@crrdlx/satoshi" target="_blank" class="w3-button w3-round-large w3-orange">Satoshi's words as Bitcoin ordinal NFTs</a>
-  </center>
-  
-
+    
   </div>
   </center>
-
-<!-- Start ichthys link -->
-<hr>
-<center>
-<a href="ichthys/index.html" target="_blank"><><</a>
-</center>
-<!-- Start end ichthys link -->
-
+    
 <!-- Start of StatCounter Code for Default Guide -->
-<script type="text/javascript">
-var sc_project=9064341; 
-var sc_invisible=1; 
-var sc_partition=35; 
-var sc_security="4159c4ae"; 
-</script>
-<script type="text/javascript" src="http://www.statcounter.com/counter/counter_xhtml.js"></script><noscript><div class="statcounter"><a href="http://www.statcounter.com/" target="_blank"><img class="statcounter" src="http://c36.statcounter.com/9064341/0/4159c4ae/1/" alt="hit counter html code" ></a></div></noscript>
+  <script type="text/javascript">
+  var sc_project=9064341; 
+  var sc_invisible=1; 
+  var sc_partition=35; 
+  var sc_security="4159c4ae"; 
+  </script>
+  <script type="text/javascript" src="http://www.statcounter.com/counter/counter_xhtml.js"></script><noscript><div class="statcounter"><a href="http://www.statcounter.com/" target="_blank"><img class="statcounter" src="http://c36.statcounter.com/9064341/0/4159c4ae/1/" alt="hit counter html code" ></a></div></noscript>
 <!-- End of StatCounter Code for Default Guide -->
-
-</body>
-</html>

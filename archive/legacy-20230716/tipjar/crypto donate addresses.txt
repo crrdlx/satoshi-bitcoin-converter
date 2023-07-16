@@ -1,0 +1,48 @@
+﻿Donate crypto to the tipjar. Public addresses:
+==============================================
+
+Coinbase
+=======
+BTC-LN
+3BMehB4zAWmwQzqUfLqtLAPCzZB6Piuiwz
+
+
+
+JAXX wallet
+===========
+Bitcoin
+1EtskEAe3fU4xvb8pV8uFi3xbDVg4TX4XX
+Bitcoin Cash
+16f3M3H2QUgbhPSZVw6puDXqGqdnZZgXPX
+
+Ethereum
+0x522D2c35aDa26EbE46D30fAE71a12dD5397bB9A8
+
+Ethereum Classic
+0x69b17Ef9C3383Bf5074E6FcF1FE6c74cABDa8377
+
+Bitcoin Cash
+16f3M3H2QUgbhPSZVw6puDXqGqdnZZgXPX
+
+Litecoin
+LUDMzwdVYDjc9apEFqNcpfgRLePB5be6SB
+DASH
+XjL9y3HrUu7e1UopTYEG3TZzMBaD2ega2W
+
+Basic Attention Token
+0x522D2c35aDa26EbE46D30fAE71a12dD5397bB9A8
+
+Dogecoin
+DFJv8NH7x1YupLP2yyqbCkpi6DYifqVNWF
+
+Digibyte
+D6tmDJBkCEMD7oMuE4SSnzrN9tR75pW2eF
+
+Enjin
+0x522D2c35aDa26EbE46D30fAE71a12dD5397bB9A8
+
+WAX
+0x522D2c35aDa26EbE46D30fAE71a12dD5397bB9A8
+
+Binance Coin (BNB)
+0x522D2c35aDa26EbE46D30fAE71a12dD5397bB9A8

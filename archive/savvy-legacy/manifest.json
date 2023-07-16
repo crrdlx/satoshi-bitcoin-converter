@@ -1,6 +1,6 @@
 {
-"name": "Satoshi Bitcoin Converter",
-"short_name": "Satoshi",
+"name": "PWA Template",
+"short_name": "PWA Template",
 "start_url": "index.html",
 "display": "standalone",
 "icons": [

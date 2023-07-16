@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple converter tool to swap between Bitcoin, satoshi, and USD dollar units.">
+    <title>Satoshi Bitcoin Converter</title>
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="manifest" href="manifest.json">
+        <!--[if lte IE 8]>
+            <link rel="stylesheet" href="css/layouts/side-menu-old-ie.css">
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+            <link rel="stylesheet" href="css/layouts/side-menu.css">
+        <!--<![endif]-->
+<link rel="icon" type="image/ico" href="http://satoshibitcoinconverter.com/favicon.ico">
+<STYLE>
+            html {
+              font-size: medium;
+            }
+            body {
+              background-color: #f6f6f6;
+              color: #330;
+              font-family: verdana, georgia, times, serif;
+              margin: ;
+              max-width: 80em;
+              padding: 0 1em;
+              width: auto;
+              font-size: 1rem;
+              line-height: 1.4;
+            }
+            a {
+              color: #1e6b8c;
+              font-size: 1em;
+              text-decoration: none;
+              transition-delay: 0.1s;
+              transition-duration: 0.3s;
+              transition-property: color, background-color;
+              transition-timing-function: linear;
+            }
+            a:visited {
+              color: #6f32ad;
+              font-size: 1em;
+            }
+            a:hover {
+              background: #b6cff9;
+              font-size: 1em;
+              text-decoration: underline;
+            }
+            a:active {
+              background-color: #427fed;
+              color: #fffff6;
+              color: white;
+              font-size: 1em;
+            }
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+              color: #black;
+              font-weight: bold;
+              line-height: 1.2;
+              margin-bottom: 1em;
+              margin-top: 2em;
+            }
+            h1 {
+              font-size: 2.2em;
+              text-align: center;
+            }
+            h2 {
+              font-size: 1.8em;
+              border-bottom: solid 0.1rem #703820;
+            }
+            h3 {
+              font-size: 1.5em;
+            }
+            h4 {
+              font-size: 1.3em;
+              text-decoration: underline;
+            }
+            h5 {
+              font-size: 1.2em;
+              font-style: italic;
+            }
+            h6 {
+              font-size: 1.1em;
+              margin-bottom: 0.5rem;
+            }
+            pre,
+            code,
+            xmp {
+              font-family: courier;
+              font-size: 1rem;
+              line-height: 1.4;
+              white-space: pre-wrap;
+            }
+            input[type=number]{
+                width: 135px;
+            } 
+            </STYLE>
+             <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</head>
+<body onload="init()">
+  <big>
+  <br>
+  <center>
+    <div class="w3-container">
+      <a href="../index.html" class="w3-button w3-round-large w3-orange">   &#x30B7   Satoshi Bitcoin Converter.com</a><br>
+    </div>
+    <br>
+  
+  
+  <small>Enter a USD amount.<br></small>
+  <table border="0" cellpadding="0" cellspacing="0" width="">
+  <form name="BTCunitconverter">
+  <tbody>
+  <tr>
+  <td>
+  <input type="number" onkeyup="BTCconvert()" value="" name="BTC" size="12"> &#x0E3F BTC-<small>bitcoin</small></td>
+  </tr>
+  <tr>
+  <td>
+  <input type="number" onkeyup="mBTCconvert()" value="" name="mBTC" size="12"> mBTC-<small>millibits/mbits</small></td>
+  </tr>
+  <tr>
+  <td>
+  <input type="number" onkeyup="uBTCconvert()" value="" name="uBTC" size="12"> &#956;BTC-<small>microbits/bits</small></td>
+  </tr>
+  <tr>
+  <td>
+  <input type="number" onkeyup="satoshiconvert()" value="" name="satoshi" size="12"> &#x30B7 satoshi</td>
+  </tr>
+  <tr>
+  <td><input type="number" onkeyup="EnteredFiatValueConvert()" value="" name="EnteredFiatValue" size="12"><small> <font color="red"> $ enter a USD amount</font></small></td>
+  </tr>
+  
+  </tbody></form></table>
+  <p align="center">
+  
+  <small><small>
+    <a href="../index.html" class="w3-button w3-margin-bottom w3-round-large w3-black"> BTC &#8594; USD conversion </a> &nbsp; <a href="" class="w3-button w3-margin-bottom w3-round-large w3-gray"> USD &#8594; BTC conversion </a><br>
+  Approximate value of one bitcoin at time of pageload (in USD):</small></small>
+  <center>
+  <big>
+  <div id="BTCPrice"/>Loading current price... If stuck here, try a different browser, see Developer notes.</div>
+  <div id="CurrentPrice"/></div>
+  </big>
+  <span style="color:firebrick">United States Dollar (USD)</span>
+  <p>
+  </center>
+  <p>
+  
+  <script language="JavaScript">
+    $.getJSON("https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD", function(data){
+              $("#BTCPrice").text(data["USD"].toFixed(2));
+          }).fail(function( dat, textStatus, error ) {
+                      var err = textStatus + ", " + error;
+                      alert(err);
+          });
+  
+  var CurrentPrice = document.getElementById('BTCPrice');
+      CurrentPrice.innerHTML = BTCPrice.innerHTML;
+  var EnteredFiatValue = document.getElementByID('EnteredFiatValue');
+  /*
+  cm/inch/feet converter - credit must stay intact for use
+  By Ada Shimar ada@chalktv.com
+  For this script and more,
+  Visit http://javascriptkit.com
+  */
+  
+  function EnteredFiatValueConvert(){
+  with (document.BTCunitconverter){
+  BTC.value = (EnteredFiatValue.value/CurrentPrice.innerHTML);
+  mBTC.value = ((EnteredFiatValue.value/CurrentPrice.innerHTML)*1000);
+  uBTC.value = ((EnteredFiatValue.value/CurrentPrice.innerHTML)*1000000);
+  satoshi.value = ((EnteredFiatValue.value/CurrentPrice.innerHTML)*100000000);
+  }
+  }
+  </script>
+  
+  
+  <p></p>
+  
+  <small><small>
+  <a href="../pages/about.html">About</a> | <a href="../pages/dev_notes.html">Developer Notes</a> | Exchange rates powered by <a href="https://www.cryptocompare.com/api" target="_blank">CryptoCompare</a><br>
+  </small></small>
+  
+  <p>
+  <a href="javascript:document.location.reload();"
+  ONMOUSEOVER="window.status='Refresh'; return true"
+  ONMOUSEOUT="window.status='ah... that was good'">
+  <center><img src="refresh.png" 
+  width="65" height="" border="0" /></a></center>
+  <p>
+  
+  <p>
+  <center><img src="../img/icon_120.png" border="0" width=18></center>
+  
+  <!-- Start of StatCounter Code for Default Guide -->
+  <script type="text/javascript">
+  var sc_project=9064341; 
+  var sc_invisible=1; 
+  var sc_partition=35; 
+  var sc_security="4159c4ae"; 
+  </script>
+  <script type="text/javascript" src="http://www.statcounter.com/counter/counter_xhtml.js"></script><noscript><div class="statcounter"><a href="http://www.statcounter.com/" target="_blank"><img class="statcounter" src="http://c36.statcounter.com/9064341/0/4159c4ae/1/" alt="hit counter html code" ></a></div></noscript>
+  <!-- End of StatCounter Code for Default Guide -->
+  
+  </body>
+  </html>
