@@ -1,7 +1,0 @@
-About this build
-
-This build is a copy from sbc-pwa.
-
-. it works for BTC
-. it's installable as PWA
-. it loads price on fleek.co

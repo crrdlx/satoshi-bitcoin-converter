@@ -1,64 +1,52 @@
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta content="text/html" http-equiv="content-type">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="manifest" href="manifest.json">
-<title>Tip Jar</title>
-<style type="text/css">
-  DIV.ETHannouncement {text-align: center }
-  </style>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tip Jar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="manifest" href="manifest.json">
+    <style>
+    body {
+      background: #f6f6f6;
+      max-width: 750px;
+      margin: 40px auto;
+      padding: 0 22px;
+      font: 18px/1.5 -apple-system, BlinkMacSystemFont, /* MacOS and iOS */
+                   'avenir next', avenir, /* MacOS and iOS */
+                   'Segoe UI', /* Windows */
+                   'lucida grande', /* Older MacOS */
+                   'helvetica neue', helvetica, /* Older MacOS */
+                   'Fira Sans', /* Firefox OS */
+                   roboto, noto, /* Google stuff */
+                   'Droid Sans', /* Old Google stuff */
+                   cantarell, oxygen, ubuntu, /* Linux stuff */
+                   'franklin gothic medium', 'century gothic', /* Windows stuff */
+                   'Liberation Sans', /* Linux */
+                   sans-serif; /* Everything else */;
+      color: #222;
+    }
 
-<link rel="icon" 
-      type="image/ico" 
-      href="http://satoshibitcoinconverter.com/favicon.ico">
+supersize {  /* this is fancified text, but it can be named as anything */
+    font-style: normal;
+    font-size: 120%;
+    color: #ff8c00;
+    text-transform: uppercase;
+}
+smalltype {  /* this is smallsized font text, but it can be named as anything. Include it with <p class="smalltype">You can use code to get "smalltype" <smalltype>like this text</smalltype>*/
+    font-style: normal;
+    font-size: 65%;
+    color: #000000;
+    /* text-transform: uppercase; */
+}
       
-  <STYLE>
-html {
-  font-size: medium;
-}
-body {
-  background-color: #f6f6f6;
-  color: #330;
-  font-family: verdana, georgia, times, serif;
-  margin: ;
-  max-width: 80em;
-  padding: 0 1em;
-  width: auto;
-  font-size: 1rem;
-  line-height: 1.4;
-}
-a {
-  color: #1e6b8c;
-  font-size: 1em;
-  text-decoration: none;
-  transition-delay: 0.1s;
-  transition-duration: 0.3s;
-  transition-property: color, background-color;
-  transition-timing-function: linear;
-}
-a:visited {
-  color: #6f32ad;
-  font-size: 1em;
-}
-a:hover {
-  background: #b6cff9;
-  font-size: 1em;
-  text-decoration: underline;
-}
-a:active {
-  background-color: #427fed;
-  color: #fffff6;
-  color: white;
-  font-size: 1em;
-}
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  color: #black;
+  color: #333333;
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 1em;
@@ -70,7 +58,7 @@ h1 {
 }
 h2 {
   font-size: 1.8em;
-  border-bottom: solid 0.1rem #703820;
+  border-bottom: solid 0.1rem firebrick;
 }
 h3 {
   font-size: 1.5em;
@@ -86,97 +74,99 @@ h5 {
 h6 {
   font-size: 1.1em;
   margin-bottom: 0.5rem;
+  color: #555555;
 }
-pre,
-code,
-xmp {
-  font-family: courier;
-  font-size: 1rem;
-  line-height: 1.4;
-  white-space: pre-wrap;
+    img.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
 }
-input[type=number]{
-    width: 135px;
-} 
-</STYLE>
+    }
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
   
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-
-</head>
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  </style>
+  </head>
 <body>
-<big>
-<br>
+  <a name="home_top_page"></a>
+
 <center>
 <div class="w3-container">
-  <a href="index.html" class="w3-button w3-round-large w3-blue">   &#x30B7   Satoshi Bitcoin Converter   </a>
+  <a href="../index.html" class="w3-button w3-round-large w3-orange">   &#x30B7   Satoshi Bitcoin Converter   </a>
 </div>
 </center>
-</big>
+
 <p>
-  <center><big><b>Tip Jar</b></big></center>
+  <center><h4>Tip Jar</h4></center>
   <p></p>
   <small>
-  There's no need to give a tip. Simply using this app is thanks enough. And to say thanks to you, there's some freebies <a href="donate.html">on this page.</a> Check out the Satoshi ebook!</p>
-  However, if you do drop a tip, it's very appreciated. :) It will help pay for hosting and such. Addresses and QR codes follow:
+  There's no need to give a tip. Simply using this app is thanks enough. And to say thanks to you, there's a freebie at <a href="https://hive.blog/@crrdlx/satoshi" target="_blank">on this page.</a> Satoshi Nakamoto's public writings...<i>all</i> of them.</p>
+  <p>No need to tip, however, if you do drop a tip, it's very appreciated. &#128515;</p>
+  <br>Addresses to tip to and QR codes follow:
 <p>
-Bitcoin (Lightning Network)<br>
-3BMehB4zAWmwQzqUfLqtLAPCzZB6Piuiwz
+<b>Bitcoin (Lightning Network)</b><br>
+scan QR code below
 <p>
-Bitcoin<br>
-1EtskEAe3fU4xvb8pV8uFi3xbDVg4TX4XX<br>
+<b>Bitcoin (BTC)</b><br>
+bc1q47vjre2r6cuuxjxyy6yujzx04ak25glmtxyzs6<br>
 <p>
-Bitcoin Cash<br>
-16f3M3H2QUgbhPSZVw6puDXqGqdnZZgXPX
+<b>Bitcoin Cash</b> (BCH)<br>
+qrdt5wfzyq30ta8pzt04ct3eyayzwlvnkuegzqylg2
 <p>
-Ethereum<br>
+<b>Ethereum</b> (ETH)<br>
 0x522D2c35aDa26EbE46D30fAE71a12dD5397bB9A8
 <p>
-Litecoin<br>
-LUDMzwdVYDjc9apEFqNcpfgRLePB5be6SB<br>
+<b>Litecoin</b> (LTC)<br>
+LRURDmwUR2Ymd1dfo1SGQgzAxTcJqJvfz4<br>
 <p>
-DASH<br>
-XjL9y3HrUu7e1UopTYEG3TZzMBaD2ega2W<br>
+<b>Dash (DASH)</b><br>
+XhaWa9wLfTEoRoHSKNJWwghxFsAD1TZuBR<br>
 <p>
-Basic Attention Token<br>
-0x522D2c35aDa26EbE46D30fAE71a12dD5397bB9A8
-<p>
-Dogecoin*<br>
+<b>Dogecoin (DOGE)</b><br>
 DFJv8NH7x1YupLP2yyqbCkpi6DYifqVNWF
 <p>
 <hr>
-* = preferred :)
-
 
 
 <!-- Start QR codes-->
 <center>
-<img src="tipjar/BTC-LN-3BMeh-coinbase.jpg"><br>
-BTC-LN: 3BMehB4zAWmwQzqUfLqtLAPCzZB6Piuiwz
+<img src="../tipjar/BTC-LN-v4vapp.png"><br>
+Bitcoin Lightning Network: via <a href="https://v4v.app" target="_blank">v4v.app</a>
 <hr>
-<img src="tipjar/BTC-1Etsk-jaxx.png"><br>
-BTC: 1EtskEAe3fU4xvb8pV8uFi3xbDVg4TX4XX
+<img src="../tipjar/BTC-bc1q4-exodus.png"><br>
+Bitcoin (BTC): bc1q47vjre2r6cuuxjxyy6yujzx04ak25glmtxyzs6
 <hr>
-<img src="tipjar/BCH-16f3M-jaxx.png"><br>
-BCH: 16f3M3H2QUgbhPSZVw6puDXqGqdnZZgXPX
+<img src="../tipjar/BCH-qrdt5-exodus.png"><br>
+Bitcoin Cash (BCH): qrdt5wfzyq30ta8pzt04ct3eyayzwlvnkuegzqylg2
 <hr>
-<img src="tipjar/ETH-0x522-jaxx.png"><br>
-ETH: 0x522D2c35aDa26EbE46D30fAE71a12dD5397bB9A8
+<img src="../tipjar/ETH-0x522-exodus.png"><br>
+Ethereum (ETH): 0x522D2c35aDa26EbE46D30fAE71a12dD5397bB9A8
 <hr>
-<img src="tipjar/LTC-LUDMz-jaxx.png"><br>
-LTC: LUDMzwdVYDjc9apEFqNcpfgRLePB5be6SB
+<img src="../tipjar/LTC-LRURD-exodus.png"><br>
+Litecoin (LTC): LRURDmwUR2Ymd1dfo1SGQgzAxTcJqJvfz4
 <hr>
-<img src="tipjar/DASH-XjL9y-jaxx.png"><br>
-DASH: XjL9y3HrUu7e1UopTYEG3TZzMBaD2ega2W
+<img src="../tipjar/DASH-XhaWa-exodus.png"><br>
+Dash (DASH): XhaWa9wLfTEoRoHSKNJWwghxFsAD1TZuBR
 <hr>
-<img src="tipjar/BAT-0x522-jaxx.png"><br>
-BAT: 0x522D2c35aDa26EbE46D30fAE71a12dD5397bB9A8
-<hr>
-<img src="tipjar/DGE-DFJv-jaxx.png"><br>
-DGE: DFJv8NH7x1YupLP2yyqbCkpi6DYifqVNWF
+<img src="../tipjar/DOGE-DFJv8-exodus.png"><br>
+Dogecoin (DOGE): DFJv8NH7x1YupLP2yyqbCkpi6DYifqVNWF
 <hr>
 </center>
 <p>
-<img src="icon36x36.jpg" border="0" width=18>
+<center>
+<img src="../img/icon_180.png" border="0" width=18>
 </center>
 <!-- Start of StatCounter Code for Default Guide -->
 <script type="text/javascript">
@@ -188,41 +178,7 @@ var sc_security="4159c4ae";
 <script type="text/javascript" src="http://www.statcounter.com/counter/counter_xhtml.js"></script><noscript><div class="statcounter"><a href="http://www.statcounter.com/" target="_blank"><img class="statcounter" src="http://c36.statcounter.com/9064341/0/4159c4ae/1/" alt="hit counter html code" ></a></div></noscript>
 <!-- End of StatCounter Code for Default Guide -->
 
-<!-- Start of Google Analytics code -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-5524326-18', 'mywebcommunity.org');
-  ga('require', 'displayfeatures');
-  ga('send', 'pageview');
-
-</script>
-<!-- End of Google Analytics code -->
-
-
-<!-- Start of Clicky analytics code -->
-<script type="text/javascript">try{ clicky.init(101146224); }catch(e){}</script>
-<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101146224ns.gif" /></p></noscript>
-<!-- End of Clicky analytics code -->
-
-
-<!-- Start of W3Counter analytics code -->
-<script src="https://www.w3counter.com/tracker.js?id=122131"></script>
-<!-- End of W3Counter analytics code -->
-
-
-<!-- AFS Analytics V7- Web Analytics 7.0 -->
-<script type='text/javascript'>
-(function(i,s,o,g,r,a,m){i['AfsAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//code.afsanalytics.com/js2/analytics.js','aa');
-aa('create', '00834699','auto');
-aa('set', 'autotrack', 'on');
-aa('set', 'autotrack.iframe', 'dataset');
-aa('send', 'pageview');
-</script>
-<!-- End AFS Analytics -->
-
+<p style="text-align:center"><a href="#home_top_page">Jump to top of page.</a></p>
 </body>
 </html>

@@ -8,41 +8,22 @@ BTC-LN
 
 
 
-JAXX wallet
+Exodus wallet
 ===========
-Bitcoin
-1EtskEAe3fU4xvb8pV8uFi3xbDVg4TX4XX
-Bitcoin Cash
-16f3M3H2QUgbhPSZVw6puDXqGqdnZZgXPX
+Bitcoin (BTC)
+bc1q47vjre2r6cuuxjxyy6yujzx04ak25glmtxyzs6
 
-Ethereum
+Bitcoin Cash (BCH)
+qrdt5wfzyq30ta8pzt04ct3eyayzwlvnkuegzqylg2
+
+Ethereum (ETH)
 0x522D2c35aDa26EbE46D30fAE71a12dD5397bB9A8
 
-Ethereum Classic
-0x69b17Ef9C3383Bf5074E6FcF1FE6c74cABDa8377
+Litecoin (LTC)
+LRURDmwUR2Ymd1dfo1SGQgzAxTcJqJvfz4
 
-Bitcoin Cash
-16f3M3H2QUgbhPSZVw6puDXqGqdnZZgXPX
+Dash (DASH)
+XhaWa9wLfTEoRoHSKNJWwghxFsAD1TZuBR
 
-Litecoin
-LUDMzwdVYDjc9apEFqNcpfgRLePB5be6SB
-DASH
-XjL9y3HrUu7e1UopTYEG3TZzMBaD2ega2W
-
-Basic Attention Token
-0x522D2c35aDa26EbE46D30fAE71a12dD5397bB9A8
-
-Dogecoin
+Dogecoin (DOGE)
 DFJv8NH7x1YupLP2yyqbCkpi6DYifqVNWF
-
-Digibyte
-D6tmDJBkCEMD7oMuE4SSnzrN9tR75pW2eF
-
-Enjin
-0x522D2c35aDa26EbE46D30fAE71a12dD5397bB9A8
-
-WAX
-0x522D2c35aDa26EbE46D30fAE71a12dD5397bB9A8
-
-Binance Coin (BNB)
-0x522D2c35aDa26EbE46D30fAE71a12dD5397bB9A8
