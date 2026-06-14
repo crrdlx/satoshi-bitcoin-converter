@@ -3,7 +3,7 @@
 
 #### Satoshi Bitcoin Converter - Progressive Web App
 
-Please use the PWA version of the app at https://satoshibitcoinconverter.com The Android app is no longer supported. The PWA version is the latest and most efficient.
+Please use the PWA version of the app at https://satoshibitcoinconverter.vercel.app The Android app is no longer supported. The PWA version is the latest and most efficient.
 
 The Satoshi Bitcoin Converter (SBC) began in [June of 2013](https://bitcointalk.org/index.php?topic=239948.msg2541921#msg2541921). The initial goal was to help juggle between Bitcoin units, decimals, satoshis (sats) and their live USD values. It was also to revert back the other way, from USD to BTC values.
 
